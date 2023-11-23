@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const FormContact = () => {
   const [nom, setNom] = useState('');
@@ -14,7 +15,7 @@ const FormContact = () => {
     axios.post('http://localhost:3000/sendMail',
       {  subject: mail+ ' '+tel, from:mail, text:nom+'\n'+msg, to:"mtonato@adpme.bj" })
       .then(data => {
-        alert('Prob')
+        alert('Soumission réussie')
       })
       .catch(err => {
         alert('Prob')
