@@ -13,9 +13,9 @@ function LesEvenements() {
     const handleChange = async (event) => {
         setValue(event.target.value);
 
-        const filteredEvents = EvenemntsLists.flatMap((el) =>
-            el.type.flatMap((ty) =>
-                ty.contenu.filter((ctu) => ctu.idtype === parseInt(value, 10))
+        const filteredEvents = EvenemntsLists.map((el) =>
+            el.type.map((ty) =>
+                ty.contenu.filter((ctu) => ctu.idtype === event.target.value)
             )
         );
 
@@ -48,7 +48,6 @@ function LesEvenements() {
                 
                     
                     <div className="col-span-3">
-                    {value}
                         <div className="grid lg:grid-cols-3 lg:gap-8 text-left grid-cols-2 gap-4">
                             {value == 'tous' ? 
                             EvenemntsLists.map((el) => {
