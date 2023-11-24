@@ -1,6 +1,7 @@
 import React from 'react';
 import actuimg from '../Images/actuessai.jpg'
 import { ActualitesLists } from '../../../NoSQL';
+import cal from '../Images/calendrier.png'
 
 function Actualite(props) {
     return (
@@ -16,7 +17,12 @@ function Actualite(props) {
                                 <img src={actuimg} alt="" />
                             </a>
                             <div className="p-5">
-                                <p><span className='text-gray-500 text-sm'><i>{al.date}</i></span></p>
+                                <p>
+                                    <span className='inline-flex'>
+                                        <img className='w-5 h-5' src={cal} />&nbsp;
+                                        <span className='text-gray-500 text-sm'><i>{al.date}</i></span>
+                                    </span>
+                                </p>
                                 <a href="#">
                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-black-900 dark:text-white">{al.titre}</h5>
                                 </a>
