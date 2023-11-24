@@ -10,7 +10,7 @@ function Description() {
                     <h3 className="text-left pb-5">
                         <span className="text-3xl font-bold dark:text-white mr-5"><span className='text-amber-400'>1°</span> L'Agence de Développement des Petites et Moyennes Entreprises en quelques mots</span>
                     </h3>
-                    <p className='text-justify py-5 leading-10'>
+                    <p className='text-justify py-5 leading-7'>
                         En janvier 2020, le Bénin a voté la Loi pour la Promotion et le Développement des MPME (Micros Petites et Moyennes Entreprises) et MPMI (Micro, Petites et Moyennes Industries), avec pour objectif de :
                         <ul class="ml-5 max-w-md space-y-1 text-black list-disc list-inside dark:text-black">
                             <li>
@@ -26,7 +26,7 @@ function Description() {
                         C’est ainsi qu’à la suite du Conseil des Ministres du 23 mars 2022, le gouvernement a acté la création de l’Agence de Développement des Petites et Moyennes Entreprises (ADPME) en tant que guichet unique et a, par la même occasion, dissout toutes les autres structures publiques d’appui à l’entrepreneuriat.
 
                     </p>
-                    <p className='text-justify py-5 leading-10'>
+                    <p className='text-justify py-5 leading-7'>
                         A la suite de sa création, la doctrine globale d’intervention de l’ADPME a été validée en Conseil des Ministres du 3 Mai 2023. L’Agence a alors initié sa structuration organisationnelle et entre maintenant dans la phase de déploiement de ses activités opérationnelles. Elle devra par conséquent créer et mettre en place son identité visuelle qui sera la référence de tous ses supports de communication de même que son site vitrine. Son identité doit être composée de l’ensemble des éléments graphiques qui non seulement reflètent la mission et la vision mais également permettent d’affirmer et d’identifier visuellement l’Agence.
                         Le présent cahier des charges est élaboré pour servir d’outil opérationnel de conduite et de réalisation du site internet de l’ADPME.
 
@@ -40,7 +40,7 @@ function Description() {
 
                     </h3>
                     
-                    <p className='text-justify py-5 leading-10'>
+                    <p className='text-justify py-5 leading-7'>
                         L'ADPME aspire à devenir le moteur du développement économique au Bénin en favorisant l'émergence et la croissance des Micros, Petites et Moyennes Entreprises (MPME). Sa vision s'articule autour de la création d'un environnement propice à l'entrepreneuriat, à l'innovation, et à la compétitivité des entreprises locales sur les marchés nationaux, sous-régionaux, et internationaux.
                     </p>
                 </div>
@@ -52,10 +52,10 @@ function Description() {
 
                     </h3>
                     
-                    <p className='text-justify py-5 leading-10'>
+                    <p className='text-justify py-5 leading-7'>
                         Explorons maintenant en détail la mission ambitieuse qui guide l'ADPME dans son rôle essentiel pour le développement durable des MPME au Bénin.
                     </p>
-                    <p className='text-left leading-10'>
+                    <p className='text-left leading-7'>
                         <ol class="space-y-4 text-black list-decimal list-inside dark:text-black ml-5">
                             <li>
                                 <span className='font-bold'>Guichet Unique et Coordination :</span>
@@ -111,13 +111,13 @@ function Description() {
 
                     </h3>
 
-                    <p className='text-justify py-5 leading-10'>
+                    <p className='text-justify py-5 leading-7'>
                         Au cœur de toute entreprise visionnaire réside un ensemble de valeurs fondamentales qui guident ses actions, nourrissent son identité, et définissent son impact sur la communauté qu'elle sert. L'Agence de Développement des Petites et Moyennes Entreprises (ADPME) du Bénin incarne cette essence, façonnant son parcours vers l'excellence en s'appuyant sur des principes profondément enracinés.
                     </p>
-                    <p className='text-justify py-5 leading-10'>
+                    <p className='text-justify py-5 leading-7'>
                         Au cœur de toute entreprise visionnaire réside un ensemble de valeurs fondamentales qui guident ses actions, nourrissent son identité, et définissent son impact sur la communauté qu'elle sert. L'Agence de Développement des Petites et Moyennes Entreprises (ADPME) du Bénin incarne cette essence, façonnant son parcours vers l'excellence en s'appuyant sur des principes profondément enracinés.
                     </p>
-                    <p className='text-left leading-10'>
+                    <p className='text-left leading-7'>
                         <ol class="space-y-4 text-black list-decimal list-inside dark:text-black ml-5">
                             <li>
                                 <span className='font-bold'>Engagement :</span>

@@ -5,6 +5,7 @@ import Checkbox from '@mui/material/Checkbox';
 import { ProjetsListe } from '../../../NoSQL';
 import EventImg from '../Images/actuessai.jpg'
 import { Radio, RadioGroup } from '@mui/material';
+import cal from '../Images/calendrier.png'
 
 function LesProjets() {
     const [value, setValue] = useState('tous');
@@ -37,7 +38,7 @@ function LesProjets() {
                                 ProjetsListe.map((el) => (
                                 <div className="max-w-sm bg-white" key={el.id}>
                                     <a href="#">
-                                        <img src={EventImg} elt="" />
+                                        {el.image ? (<img src={el.image} elt="" />) : ("")}
                                     </a>
                                     <div className="p-5">
                                         <p><span className='text-gray-300'><i>{el.date}</i></span></p>
@@ -58,7 +59,12 @@ function LesProjets() {
                                             <img src={EventImg} elt="" />
                                         </a>
                                         <div className="p-5">
-                                            <p><span className='text-black text-sm'><i>{el.date}</i></span></p>
+                                            <p>
+                                                <span className='inline-flex'>
+                                                    <img className='w-5 h-5' src={cal} />&nbsp;
+                                                    <span className='text-gray-500 text-sm'><i>{el.date}</i></span>
+                                                </span>
+                                            </p>
                                             <a href="#">
                                                 <h5 className="mb-2 text-sm font-bold tracking-tight text-black-900 dark:text-white">{el.title}</h5>
                                             </a>

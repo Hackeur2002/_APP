@@ -5,6 +5,7 @@ import Checkbox from '@mui/material/Checkbox';
 import { TypeEvent } from '../../../NoSQL';
 import { EvenemntsLists } from '../../../NoSQL';
 import EventImg from '../Images/actuessai.jpg'
+import cal from '../Images/calendrier.png'
 
 function LesEvenements() {
     const [tabEvent, setTabEvent] = React.useState([]);
@@ -55,12 +56,17 @@ function LesEvenements() {
                                     return et.contenu.map((ec)=>(
                                         <div key={ec.id} className="max-w-sm bg-white">
                                             <a href="#">
-                                                <img src={EventImg} elt="" />
+                                                {ec.image ? (<img src={ec.image} elt="" />) : ("")}
                                             </a>
                                             <div className="p-5">
-                                                <p><span className='text-gray-300'><i>{ec.date}</i></span></p>
+                                                <p>
+                                                    <span className='inline-flex'>
+                                                        <img className='w-5 h-5' src={cal} />&nbsp;
+                                                        <span className='text-gray-500 text-sm'><i>{ec.date}</i></span>
+                                                    </span>
+                                                </p>
                                                 <a href="#">
-                                                    <h5 className="mb-2 text-xl font-bold tracking-tight text-black-900 dark:text-white">{ec.titre}</h5>
+                                                    <h5 className="mb-2 text-2sm font-bold tracking-tight text-black-900 dark:text-white">{ec.titre}</h5>
                                                 </a>
                                                 <p className="mb-3 font-normal text-sm dark:text-black-200">{ec.description}</p>
 
