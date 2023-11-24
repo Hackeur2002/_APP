@@ -14,7 +14,15 @@ import mail from './Images/email.png'
 import loc from './Images/broche-de-localisation.png'
 
 function header() {
-    
+    const emailAddress = 'contact@adpme.bj';
+
+    const handleEmailLinkClick = () => {
+        // // Construire l'URL de l'email avec le destinataire prérempli
+        // const emailUrl = `mailto:${emailAddress}`;
+
+        // // Ouvrir l'URL dans une nouvelle fenêtre ou un nouvel onglet
+        // window.open(emailUrl, '_blank');
+    };
     return (
         
         <header className="sticky top-0 w-full z-50">
@@ -46,10 +54,10 @@ function header() {
                         &nbsp;&nbsp;&nbsp;
 
                         <li>
-                            <a href="#" className="text-sm text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                            <a href="#" onClick={handleEmailLinkClick} className="text-sm text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
                                 <div className='inline-flex'>
                                     <img className="w-5 h-5" src={mail} />&nbsp;
-                                    <span className='text-sm'>: contact@adpme.bj</span>
+                                    <span className='text-sm'>: {emailAddress}</span>
                                 </div>
                             </a>
                         </li>

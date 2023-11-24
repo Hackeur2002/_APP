@@ -108,7 +108,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype:1,
-                        image:'https://cdn.pixabay.com/photo/2017/02/16/12/12/business-woman-2071342_640.jpg'
+                        image:'https://cdn.pixabay.com/photo/2017/02/16/12/12/business-woman-2071342_640.jpg',
+                        etiquette:'event'
                     },
                     {
                         id: 2,
@@ -116,7 +117,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype:1,
-                        image:'https://cdn.pixabay.com/photo/2018/04/28/12/39/new-year-3357190_640.jpg'
+                        image:'https://cdn.pixabay.com/photo/2018/04/28/12/39/new-year-3357190_640.jpg',
+                        etiquette:'event'
                     }
                 ]
             },
@@ -130,7 +132,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype:2,
-                        image:'https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_640.jpg'
+                        image:'https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_640.jpg',
+                        etiquette:'event'
                     }
                 ]
             },
@@ -144,7 +147,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype:3,
-                        image:'https://cdn.pixabay.com/photo/2018/02/03/09/51/bulletin-board-3127287_640.jpg'
+                        image:'https://cdn.pixabay.com/photo/2018/02/03/09/51/bulletin-board-3127287_640.jpg',
+                        etiquette:'event'
                     },
                     {
                         id: 3,
@@ -152,7 +156,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype:3,
-                        image:'https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_640.png'
+                        image:'https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_640.png',
+                        etiquette:'event'
                     }
                 ]
 
@@ -174,7 +179,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype: 4,
-                        image:'https://pixabay.com/fr/photos/concert-confettis-c%C3%A9l%C3%A9bration-2527495/'
+                        image:'https://pixabay.com/fr/photos/concert-confettis-c%C3%A9l%C3%A9bration-2527495/',
+                        etiquette:'event'
                     },
                     {
                         id: 2,
@@ -182,7 +188,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype: 4,
-                        image:'https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_640.jpg'
+                        image:'https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_640.jpg',
+                        etiquette:'event'
                     }
                 ]
             },
@@ -196,7 +203,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype: 5,
-                        image:''
+                        image:'',
+                        etiquette:'event'
                     }
                 ]
             },
@@ -210,7 +218,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype: 6,
-                        image:'https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_640.jpg'
+                        image:'https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_640.jpg',
+                        etiquette:'event'
                     },
                     {
                         id: 3,
@@ -218,7 +227,8 @@ export const EvenemntsLists = [
                         description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
                         date: "NOV-14",
                         idtype: 6,
-                        image:'https://cdn.pixabay.com/photo/2016/03/27/18/53/drinks-1283608_640.jpg'
+                        image:'https://cdn.pixabay.com/photo/2016/03/27/18/53/drinks-1283608_640.jpg',
+                        etiquette:'event'
                     }
                 ]
 
