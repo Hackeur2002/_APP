@@ -5,7 +5,7 @@ import { Carousel } from 'flowbite-react';
 function banniere() {
     return (
         <section className="bg-cover bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-            <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32">
+            <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl animate-fade-right animate-once animate-duration-1000 animate-delay-300">ENTREPRENDRE AU <span className="text-amber-500 dark:text-amber-500">BENIN</span></h1>
                 <h3 className="mb-4 text-4xl font-bold tracking-tight leading-none text-white md:text-5xl lg:text-6xl animate-fade-left animate-once animate-duration-1000 animate-delay-300">PLUS SIMPLE QUAND ON EST <span className="text-amber-500 dark:text-amber-500">BIEN GUIDÉ</span></h3>
                 <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48 animate-flip-down animate-once animate-duration-1000 animate-delay-300">A l'ADPME, tout indépendant, commerçant ou entrepreneur béninois peut obtenir gratuitement une réponse à toutes ses questions entrepreneuriales.</p>
