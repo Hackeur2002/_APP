@@ -7,7 +7,7 @@ function guide(props) {
                 <div className='px-3 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                     <h3 className="text-left pb-5">
                         <span className="text-3xl font-bold dark:text-white mr-5">Guide</span>
-                        <a href="#" className="hover:underline">
+                        <a href="/guide" className="hover:underline">
                             <span className='text-black-500 dark:text-gray-400'>voir tout</span>
                         </a>
                     </h3>

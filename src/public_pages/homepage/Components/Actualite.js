@@ -8,9 +8,6 @@ function Actualite(props) {
             <div className='px-3 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                 <h3 className="text-left pb-5">
                     <span className="text-3xl font-bold dark:text-white mr-5">Actualités</span>
-                    <a href="#" className="hover:underline">
-                        <span className='text-black-500 dark:text-white'>voir tout</span>
-                    </a>
                 </h3>
                 <div className="grid lg:grid-cols-4 lg:gap-8 text-left grid-cols-2 gap-4">
                     {ActualitesLists.map((al)=>(
@@ -19,7 +16,7 @@ function Actualite(props) {
                                 <img src={actuimg} alt="" />
                             </a>
                             <div className="p-5">
-                                <p><span className='text-gray-300'><i>{al.date}</i></span></p>
+                                <p><span className='text-gray-500 text-sm'><i>{al.date}</i></span></p>
                                 <a href="#">
                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-black-900 dark:text-white">{al.titre}</h5>
                                 </a>
