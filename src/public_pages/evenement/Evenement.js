@@ -5,7 +5,7 @@ import LesEvenements from './Components/LesEvenements';
 function Evenement(props) {
     return (
         <>
-            <Banniere desc="Evènements" name="Actualités / Evènements" />
+            <Banniere desc="EVENEMENT" name="Actualités / Evènements" />
             <LesEvenements />
         </>
     );
