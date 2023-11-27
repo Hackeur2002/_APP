@@ -17,6 +17,7 @@ import Projet from './public_pages/projet/Projet';
 import Communique from './public_pages/communique/Communique';
 import EService from './public_pages/eService/EService';
 import Guide from './public_pages/guide/Guide';
+import PdfViewer from './public_pages/PdfViewer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -37,6 +38,7 @@ root.render(
         <Route exact path="guide" element={<Guide />} />
         <Route index element={<Homepage />} />
       </Route>
+      <Route path="/pdf" element={<PdfViewer />} />
     </Routes>
   </BrowserRouter>
 );

@@ -25,7 +25,7 @@ function Description() {
     };
     return (
         <>
-            <div className='px-20 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
+            <div className='max-xl:px-14 px-20 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                 <Tabs value={activeTab} className='z-0'>
                     <TabsHeader
                         className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"

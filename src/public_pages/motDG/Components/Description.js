@@ -1,15 +1,15 @@
 import React from 'react';
-import imgprov from '../Images/imgprov.jpg';
+import imgdg from '../Images/dg.jpg';
 
 function Description(props) {
     return (
         <>
-            <div className='px-20 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
-                <div className="grid grid-cols-3 gap-4">
+            <div className='max-sm:px-1 px-20 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
+                <div className="max-xl:flex max-xl:flex-col max-sm:flex max-sm:flex-col grid grid-cols-3 gap-4">
                     <div>
                         <figure className="max-w-lg">
-                            <img className="h-auto max-w-full " src={imgprov} alt="image description" />
-                            <figcaption className="mt-2 text-xl text-left text-black dark:text-black font-bold">Nom du DG</figcaption>
+                            <img className="h-auto w-full " src={imgdg} alt="image description" />
+                            <figcaption className="mt-2 text-xl text-left text-black dark:text-black font-bold">Edouard SEHLIN</figcaption>
                             <figcaption className="mt-2 text-xl text-left text-amber-500 dark:text-amber-500">Directeur Géneral</figcaption>
                         </figure>
                     </div>

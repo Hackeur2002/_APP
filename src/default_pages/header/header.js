@@ -26,7 +26,7 @@ function header() {
     return (
         
         <header className="sticky top-0 w-full z-50">
-            <div className='flex justify-end lg:bg-gray-50 lg:w-full lg:py-2 lg:block sm:hidden'>
+            <div className='flex justify-end lg:bg-gray-50 lg:w-full lg:py-2 lg:block max-sm:hidden max-xl:hidden'>
                 <div>
                     <ul className="flex w-100 justify-center space-x-3">
                         <li>
@@ -108,7 +108,7 @@ function header() {
                             </li>
                             <li>
                                 <Dropdown className="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700" label="" dismissOnClick={false} renderTrigger={() => <span className='text-white cursor-pointer' style={{display:'flex', flexDirection:'row'}}>Autres services<img src={Drop} /></span>} inline>
-                                    <Dropdown.Item as="a" href="/aide" className='hover:bg-gray-100 lg:hover:text-amber-400'>Qui peut m'aider ?</Dropdown.Item>
+                                    <Dropdown.Item as="a" href="/aide" className='hover:bg-gray-100 lg:hover:text-amber-400'>Besoin d'aide ?</Dropdown.Item>
                                     <Dropdown.Item as="a" href="/eservice" className='hover:bg-gray-100 lg:hover:text-amber-400'>E-service</Dropdown.Item>
                                 </Dropdown>
                             </li>

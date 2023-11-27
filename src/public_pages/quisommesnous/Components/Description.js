@@ -5,7 +5,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 function Description() {
     return (
         <>
-            <section className="bg-gray-100 dark:bg-gray-900">
+            <section className="max-xl:px-14 bg-gray-100 dark:bg-gray-900">
                 <div className='px-20 px-3 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                     <h3 className="text-left pb-5">
                         <span className="text-3xl font-bold dark:text-white mr-5"><span className='text-amber-400'>1°</span> L'Agence de Développement des Petites et Moyennes Entreprises en quelques mots</span>
@@ -111,9 +111,6 @@ function Description() {
 
                     </h3>
 
-                    <p className='text-justify py-5 leading-7'>
-                        Au cœur de toute entreprise visionnaire réside un ensemble de valeurs fondamentales qui guident ses actions, nourrissent son identité, et définissent son impact sur la communauté qu'elle sert. L'Agence de Développement des Petites et Moyennes Entreprises (ADPME) du Bénin incarne cette essence, façonnant son parcours vers l'excellence en s'appuyant sur des principes profondément enracinés.
-                    </p>
                     <p className='text-justify py-5 leading-7'>
                         Au cœur de toute entreprise visionnaire réside un ensemble de valeurs fondamentales qui guident ses actions, nourrissent son identité, et définissent son impact sur la communauté qu'elle sert. L'Agence de Développement des Petites et Moyennes Entreprises (ADPME) du Bénin incarne cette essence, façonnant son parcours vers l'excellence en s'appuyant sur des principes profondément enracinés.
                     </p>

@@ -5,7 +5,7 @@ import Description from './Components/Description';
 function Aide(props) {
     return (
         <>
-            <Banniere desc="QUI PEUT M'AIDER ?" name="Autres services / Qui peut m'aider ?" />
+            <Banniere desc="BESOIN D'AIDE ?" name="Autres services / Besoin d'aide ?" />
             <Description />
         </>
     );

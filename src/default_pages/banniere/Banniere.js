@@ -3,8 +3,8 @@ import React from 'react';
 function Banniere(props) {
     return (
         <section className="bg-amber-400 w-full" style={{ height: '250px' }}>
-            <div className="px-4 mx-auto max-w-screen-xl text-left py-24 lg:py-24">
-                <h1 className="animate-fade-right animate-once animate-duration-1000 animate-delay-300 mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-4xl">{props.desc}</h1>
+            <div className="max-[1200px]:px-14 max-sm:px-4 max-xl:px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-24">
+                <h1 className=" max-md:text-black max-sm:text-black animate-fade-right animate-once animate-duration-1000 animate-delay-300 mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-4xl">{props.desc}</h1>
                 <ol className="animate-fade-right animate-once animate-duration-1000 animate-delay-300 inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                     <li className="inline-flex items-center">
                         <a href="/accueil" className="inline-flex items-center text-sm font-medium text-white hover:text-amber-600 dark:text-white dark:hover:text-white">
