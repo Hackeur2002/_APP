@@ -13,7 +13,7 @@ function guide(props) {
                     </h3>
                     <div className="grid grid-cols-4 gap-4 text-left">
                         <div className='p-3 w-auto'>
-                            <a href="/pdf" className="hover:underline">
+                            <a target='_blank' href="./pdf/Guide_des_fondateurs_pour_la_levee_de_fonds_au_Benin.pdf" className="hover:underline">
                                 <span className='text-black-500 dark:text-gray-400'>Guide des
                                     fondateurs pour
                                     la levée de fonds
