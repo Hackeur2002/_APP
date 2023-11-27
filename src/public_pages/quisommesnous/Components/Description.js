@@ -19,9 +19,6 @@ function Description() {
                             <li>
                                 d’établir un régime spécifique des aides de l'État et des collectivités territoriales en faveur des entreprises pour tenir compte de leur spécificité et de leur vulnérabilité face à la concurrence régionale et internationale.
                             </li>
-                            <li>
-                                Inclusion of at least one special character, e.g., ! @ # ?
-                            </li>
                         </ul>
                         C’est ainsi qu’à la suite du Conseil des Ministres du 23 mars 2022, le gouvernement a acté la création de l’Agence de Développement des Petites et Moyennes Entreprises (ADPME) en tant que guichet unique et a, par la même occasion, dissout toutes les autres structures publiques d’appui à l’entrepreneuriat.
 
