@@ -5,14 +5,16 @@ function footer() {
     return (
         <footer className="bg-green-950 dark:bg-gray-800">
             <div className="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
-                <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+                <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
                     <div>
                         <a href="/accueil" className="flex items-center justify-center mb-5">
                             <img src={logo} className="w-16 lg:w-80" alt="ADPME Logo" />
                         </a>
                     </div>
-                    <div>
-                        <h3 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">A propos</h3>
+                    {/* <div>
+                        <h3 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+                            <a href="/quisommesnous" className=" hover:underline">A propos</a>
+                        </h3>
                         <ul className="text-white dark:text-white">
                             <li className="mb-4">
                                 <a href="/quisommesnous" className=" hover:underline">Qui sommes-nous ?</a>
@@ -24,7 +26,7 @@ function footer() {
                                 <a href="/motdg" className="hover:underline">Mot du Directeur Géneral</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div>
                         <h3 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Actualités</h3>
                         <ul className="text-white dark:text-white">
@@ -57,7 +59,13 @@ function footer() {
                                 <a href="/accueil" className="hover:underline">Accueil</a>
                             </li>
                             <li className="mb-4">
+                                <a href="/quisommesnous" className=" hover:underline">A propos</a>
+                            </li>
+                            <li className="mb-4">
                                 <a href="/guide" className="hover:underline">Guides</a>
+                            </li>
+                            <li className="mb-4">
+                                <a href="/recrutement" className="hover:underline">Opportunités</a>
                             </li>
                             <li className="mb-4">
                                 <a href="/FAQ" className="hover:underline">FAQ</a>
