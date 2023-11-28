@@ -53,7 +53,7 @@ function Evenement() {
                                 return lescontenus.map((lc) => (
                                     <div key={lc.id}>
 
-                                        <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                        <a href={`/details-evenement/${lc.titre}`} className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                                             <div className='p-2 w-40'>
                                                 <h5 className="mb-2 font-400 tracking-tight text-gray-900 dark:text-white">{lc.date}</h5>
                                             </div>

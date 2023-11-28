@@ -20,12 +20,12 @@ function Description(props) {
     return (
         <>
             <div className='max-xl:px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
-                <span className='text-4xl font-bold'>{props.name}</span>
-                <div className="max-md:flex max-md:flex-col grid grid-cols-4 gap-4 mt-10 ml-10">
+                <span className='text-xl font-bold'>{props.name}</span>
+                <div className="max-md:flex max-md:flex-col grid grid-cols-4 gap-4 mt-10 ml-10 mb-10">
                     <div>
                         <div className="grid grid-rows-5 grid-flow-col gap-4">
                             <div>
-                                <span className='text-xl font-bold'>Infos Général</span>
+                                <span className='text-2sm font-bold'>Infos Général</span>
                             </div>
                             <div className='inline-flex'>
                                 <img className="w-5 h-5" src={calendrier} />&nbsp;
@@ -48,7 +48,7 @@ function Description(props) {
                     <div>
                         <div className="grid grid-rows-4 grid-flow-col gap-4">
                             <div>
-                                <span className='text-xl font-bold'>Adresse</span>
+                                <span className='text-2sm font-bold'>Adresse</span>
                             </div>
                             <div>
                                 {selectedEvent.adresse}
@@ -58,7 +58,7 @@ function Description(props) {
                     <div>
                         <div className="grid grid-rows-4 grid-flow-col gap-4">
                             <div>
-                                <span className='text-xl font-bold'>Organisateur</span>
+                                <span className='text-2sm font-bold'>Organisateur</span>
                             </div>
                             <div>
                                 <span className='text-sm font-bold'>Nom de l'Organisateur</span>
@@ -73,7 +73,7 @@ function Description(props) {
                     </div>
                     <div>
                         <div>
-                            <span className='text-sm text-center font-bold'>LOGO DE L'ORGANISATEUR</span>
+                            <span className='text-2sm text-center font-bold'>LOGO DE L'ORGANISATEUR</span>
                         </div>
                     </div>
                 </div>
