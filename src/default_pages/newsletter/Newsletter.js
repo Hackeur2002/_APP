@@ -1,8 +1,10 @@
 import React from 'react';
+import news from './amazone.jpg'
+import news2 from './amazone2.jpg'
 
 function Newsletter(props) {
     return (
-        <section className="bg-amber-600 dark:bg-amber-600">
+        <section className="bg-cover bg-center bg-no-repeat bg-gray-200 bg-blend-multiply max-md:h-auto max-md:w-full" style={{ backgroundImage: `url(${news2})` }}>
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-md sm:text-center">
                     <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-white sm:text-4xl">Inscrivez-vous à notre newsletter</h2>
