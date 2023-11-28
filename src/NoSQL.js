@@ -94,148 +94,152 @@ export const Produit = [
 ]
 
 export const EvenemntsLists = [
-    // {
-    //     id:1,
-    //     libelle:"THEME",
-    //     type:[
-    //         {
-    //             id:1,
-    //             typeE:"Assurances, fiscalité & comptabilité",
-    //             contenu: [
-    //                 {
-    //                     id: 1,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype:1,
-    //                     image:'https://cdn.pixabay.com/photo/2017/02/16/12/12/business-woman-2071342_640.jpg',
-    //                     etiquette:'event'
-    //                 },
-    //                 {
-    //                     id: 2,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype:1,
-    //                     image:'https://cdn.pixabay.com/photo/2018/04/28/12/39/new-year-3357190_640.jpg',
-    //                     etiquette:'event'
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             id: 2,
-    //             typeE: "Avant de démarrer une entreprise",
-    //             contenu:[
-    //                 {
-    //                     id: 1,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype:2,
-    //                     image:'https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_640.jpg',
-    //                     etiquette:'event'
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             id: 3,
-    //             typeE: "Démarrer une entreprise & formalités",
-    //             contenu: [
-    //                 {
-    //                     id: 2,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype:3,
-    //                     image:'https://cdn.pixabay.com/photo/2018/02/03/09/51/bulletin-board-3127287_640.jpg',
-    //                     etiquette:'event'
-    //                 },
-    //                 {
-    //                     id: 3,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype:3,
-    //                     image:'https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_640.png',
-    //                     etiquette:'event'
-    //                 }
-    //             ]
+    {
+        id:1,
+        libelle:"THEME",
+        type:[
+            {
+                id:1,
+                typeE:"Assurances, fiscalité & comptabilité",
+                contenu: [
+                    {
+                        id: 10,
+                        titre: "LE FINANCEMENT CITOYEN",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype:1,
+                        image:'https://cdn.pixabay.com/photo/2017/02/16/12/12/business-woman-2071342_640.jpg',
+                        etiquette:'event',
+                        lieu:"Cotonou",
+                        langue:"Français",
+                        prix:"Gratuit",
+                        adresse:"Cotonou Mènontin 1014 Rue Hôpital de Mènontin Bénin"
+                    },
+                    {
+                        id: 11,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype:1,
+                        image:'https://cdn.pixabay.com/photo/2018/04/28/12/39/new-year-3357190_640.jpg',
+                        etiquette:'event'
+                    }
+                ]
+            },
+            {
+                id: 2,
+                typeE: "Avant de démarrer une entreprise",
+                contenu:[
+                    {
+                        id: 12,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype:2,
+                        image:'https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_640.jpg',
+                        etiquette:'event'
+                    }
+                ]
+            },
+            {
+                id: 3,
+                typeE: "Démarrer une entreprise & formalités",
+                contenu: [
+                    {
+                        id: 13,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype:3,
+                        image:'https://cdn.pixabay.com/photo/2018/02/03/09/51/bulletin-board-3127287_640.jpg',
+                        etiquette:'event'
+                    },
+                    {
+                        id: 14,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype:3,
+                        image:'https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_640.png',
+                        etiquette:'event'
+                    }
+                ]
 
-    //         },
-    //     ],
+            },
+        ],
         
-    // },
-    // {
-    //     id: 2,
-    //     libelle: "TYPE D'EVENEMENT",
-    //     type: [
-    //         {
-    //             id: 4,
-    //             typeE: "Atelier-séminaire",
-    //             contenu: [
-    //                 {
-    //                     id: 1,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype: 4,
-    //                     image:'https://pixabay.com/fr/photos/concert-confettis-c%C3%A9l%C3%A9bration-2527495/',
-    //                     etiquette:'event'
-    //                 },
-    //                 {
-    //                     id: 2,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype: 4,
-    //                     image:'https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_640.jpg',
-    //                     etiquette:'event'
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             id: 5,
-    //             typeE: "Conférence",
-    //             contenu: [
-    //                 {
-    //                     id: 1,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype: 5,
-    //                     image:'',
-    //                     etiquette:'event'
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             id: 6,
-    //             typeE: "Focus Day",
-    //             contenu: [
-    //                 {
-    //                     id: 2,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype: 6,
-    //                     image:'https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_640.jpg',
-    //                     etiquette:'event'
-    //                 },
-    //                 {
-    //                     id: 3,
-    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //                     date: "NOV-14",
-    //                     idtype: 6,
-    //                     image:'https://cdn.pixabay.com/photo/2016/03/27/18/53/drinks-1283608_640.jpg',
-    //                     etiquette:'event'
-    //                 }
-    //             ]
+    },
+    {
+        id: 2,
+        libelle: "TYPE D'EVENEMENT",
+        type: [
+            {
+                id: 4,
+                typeE: "Atelier-séminaire",
+                contenu: [
+                    {
+                        id: 15,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype: 4,
+                        image:'https://pixabay.com/fr/photos/concert-confettis-c%C3%A9l%C3%A9bration-2527495/',
+                        etiquette:'event'
+                    },
+                    {
+                        id: 16,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype: 4,
+                        image:'https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_640.jpg',
+                        etiquette:'event'
+                    }
+                ]
+            },
+            {
+                id: 5,
+                typeE: "Conférence",
+                contenu: [
+                    {
+                        id: 17,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype: 5,
+                        image:'',
+                        etiquette:'event'
+                    }
+                ]
+            },
+            {
+                id: 6,
+                typeE: "Focus Day",
+                contenu: [
+                    {
+                        id: 18,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype: 6,
+                        image:'https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_640.jpg',
+                        etiquette:'event'
+                    },
+                    {
+                        id: 19,
+                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+                        date: "NOV-14",
+                        idtype: 6,
+                        image:'https://cdn.pixabay.com/photo/2016/03/27/18/53/drinks-1283608_640.jpg',
+                        etiquette:'event'
+                    }
+                ]
 
-    //         },
-    //     ],
+            },
+        ],
 
-    // }
+    }
 ]
 
 export const ActualitesLists = [
@@ -316,38 +320,41 @@ export const Organisation = [
 ]
 
 export const ProjetsListe = [
-    // {
-    //     id:1,
-    //     title:"PROJET 1",
-    //     description:"CECI EST LE PROJET 1",
-    //     statut:"t",
-    //     date:"17/12/2023",
-    //     image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/2023-10/WOBIZZ.jpg?itok=uGJvEoNl'
-    // },
-    // {
-    //     id: 2,
-    //     title: "PROJET 2",
-    //     description: "CECI EST LE PROJET 2",
-    //     statut: "bt",
-    //     date:"17/12/2023",
-    //     image:'https://1819.brussels/sites/default/files/styles/event_logo/public/eighteennineteen/logos/port_de_bruxelles.jpeg?itok=Ho2A9Jdd'
-    // },
-    // {
-    //     id: 3,
-    //     title: "PROJET 3",
-    //     description: "CECI EST LE PROJET 3",
-    //     statut: "o",
-    //     date:"17/12/2023",
-    //     image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/eighteennineteen/logos/VillageFinance_logo_FR.jpg?itok=ldAV4TL7'
-    // },
-    // {
-    //     id: 4,
-    //     title: "PROJET 4",
-    //     description: "CECI EST LE PROJET 4",
-    //     statut: "bt",
-    //     date:"17/12/2023",
-    //     image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/eighteennineteen/logos/port_de_bruxelles.jpeg?itok=DFi8XRj2'
-    // },
+    {
+        id:1,
+        title:"PROJET 1",
+        description:"CECI EST LE PROJET 1",
+        statut:"t",
+        date:"17/12/2023",
+        image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/2023-10/WOBIZZ.jpg?itok=uGJvEoNl',
+        soutien:"Financier",
+        secteur:"Tous les secteurs",
+        orga:"FinLab Organisation"
+    },
+    {
+        id: 2,
+        title: "PROJET 2",
+        description: "CECI EST LE PROJET 2",
+        statut: "bt",
+        date:"17/12/2023",
+        image:'https://1819.brussels/sites/default/files/styles/event_logo/public/eighteennineteen/logos/port_de_bruxelles.jpeg?itok=Ho2A9Jdd'
+    },
+    {
+        id: 3,
+        title: "PROJET 3",
+        description: "CECI EST LE PROJET 3",
+        statut: "o",
+        date:"17/12/2023",
+        image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/eighteennineteen/logos/VillageFinance_logo_FR.jpg?itok=ldAV4TL7'
+    },
+    {
+        id: 4,
+        title: "PROJET 4",
+        description: "CECI EST LE PROJET 4",
+        statut: "bt",
+        date:"17/12/2023",
+        image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/eighteennineteen/logos/port_de_bruxelles.jpeg?itok=DFi8XRj2'
+    },
 ]
 
 export const CommuniqueListe = [
@@ -396,4 +403,43 @@ export const EService = [
         id: 5,
         title: "Service 5"
     },
+]
+
+export const RecrutementsListe = [
+    {
+        id:1,
+        titre:"DÉVELOPPEUR D’AFFAIRES",
+        subTitle: "Nous recherchons un Business développer qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
+        organisation:"ADPME",
+        dateOuverture:"14/11/23",
+        dateFermetture:"14/12/23",
+        document:""
+    },
+    {
+        id:2,
+        titre:"MARKETING",
+        subTitle: "Nous recherchons un Marketicien qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
+        organisation:"ADPME",
+        dateOuverture:"14/11/23",
+        dateFermetture:"14/12/23",
+        document:""
+    },
+    {
+        id: 3,
+        titre: "RESPONSABLE LOGISTIC SENIOR",
+        subTitle: "Nous recherchons un chargé de la logistique senior qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
+        organisation: "ADPME",
+        dateOuverture: "14/11/23",
+        dateFermetture: "14/12/23",
+        document: ""
+    },
+    {
+        id: 4,
+        titre: "SENIOR PROJECT MANAGER",
+        subTitle: "Nous recherchons un gestionnaire de projet senior qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
+        organisation: "ADPME",
+        dateOuverture: "14/11/23",
+        dateFermetture: "14/12/23",
+        document: ""
+    }
 ]

@@ -76,7 +76,7 @@ function LesEvenements() {
                                         return el.type.map((et) => {
                                             return et.contenu.map((ec) => (
                                                 <div key={ec.id} className="max-w-sm bg-white">
-                                                    <a href="#">
+                                                    <a href={`/details-evenement/${ec.titre}`}>
                                                         {ec.image ? (<img src={ec.image} elt="" />) : ("")}
                                                     </a>
                                                     <div className="p-5">
@@ -86,7 +86,7 @@ function LesEvenements() {
                                                                 <span className='text-gray-500 text-sm'><i>{ec.date}</i></span>
                                                             </span>
                                                         </p>
-                                                        <a href="#">
+                                                        <a href={`/details-evenement/${ec.titre}`}>
                                                             <h5 className="mb-2 text-2sm font-bold tracking-tight text-black-900 dark:text-white">{ec.titre}</h5>
                                                         </a>
                                                         <p className="mb-3 font-normal text-sm dark:text-black-200">{ec.description}</p>
@@ -99,12 +99,12 @@ function LesEvenements() {
                                     tabEvent.map((ev) => (
 
                                         <div className="max-w-sm bg-white">
-                                            <a href="#">
+                                            <a href={`/details-evenement/${ev.titre}`}>
                                                 <img src={EventImg} elt="" />
                                             </a>
                                             <div className="p-5">
                                                 <p><span className='text-gray-300'><i>{ev.date}</i></span></p>
-                                                <a href="#">
+                                                <a href={`/details-evenement/${ev.titre}`}>
                                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-black-900 dark:text-white">{ev.titre}</h5>
                                                 </a>
                                                 <p className="mb-3 font-normal text-sm dark:text-black-200">{ev.description}</p>

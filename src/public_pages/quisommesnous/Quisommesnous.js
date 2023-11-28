@@ -5,7 +5,7 @@ import Description from './Components/Description';
 function Quisommesnous(props) {
     return (
         <>
-            <Banniere desc="QUI SOMMES-NOUS ?" name="A propos / Qui somme nous ?" />
+            <Banniere desc="A PROPOS" name="A propos " />
             <Description />
         </>
     );

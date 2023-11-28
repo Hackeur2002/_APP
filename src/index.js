@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import Homepage from './public_pages/homepage/homepage';
 import Quisommesnous from './public_pages/quisommesnous/Quisommesnous';
 import Organigramme from './public_pages/organigramme/Organigramme';
@@ -17,7 +17,23 @@ import Projet from './public_pages/projet/Projet';
 import Communique from './public_pages/communique/Communique';
 import EService from './public_pages/eService/EService';
 import Guide from './public_pages/guide/Guide';
-import PdfViewer from './public_pages/PdfViewer'
+import EvenementSelect from './public_pages/evenement/evenementSelect/EvenementSelect';
+import ProjetSelect from './public_pages/projet/projetSelect/ProjetSelect';
+import Recrutement from './public_pages/recrutement/Recrutement';
+import RecrutementSelect from './public_pages/recrutement/recrutementSelect/RecrutementSelect';
+
+const EventCode = () => {
+  const { idEvent } = useParams();
+  return <EvenementSelect name={idEvent} />;
+};
+const ProjetCode = () => {
+  const { idProjet } = useParams();
+  return <ProjetSelect name={idProjet} />;
+};
+const RecrutementCode = () => {
+  const { idRecru } = useParams();
+  return <RecrutementSelect name={idRecru} />;
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,9 +52,12 @@ root.render(
         <Route exact path="communique" element={<Communique />} />
         <Route exact path="eservice" element={<EService />} />
         <Route exact path="guide" element={<Guide />} />
+        <Route exact path="recrutement" element={<Recrutement />} />
+        <Route path="details-evenement/:idEvent" element={<EventCode />} />
+        <Route path="details-projets/:idProjet" element={<ProjetCode />} />
+        <Route path="details-recrutement/:idRecru" element={<RecrutementCode />} />
         <Route index element={<Homepage />} />
       </Route>
-      <Route path="/pdf" element={<PdfViewer />} />
     </Routes>
   </BrowserRouter>
 );

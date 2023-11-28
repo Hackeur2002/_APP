@@ -89,11 +89,7 @@ function header() {
                     <div className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-12 lg:mt-0">
                             <li>
-                                <Dropdown className="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700" label="" dismissOnClick={false} renderTrigger={() => <span className='text-white cursor-pointer' style={{display:'flex', flexDirection:'row'}}>A propos<img src={Drop} /></span>} inline>
-                                    <Dropdown.Item as="a" href="/quisommesnous" className='hover:bg-gray-100 lg:hover:text-amber-400'>Qui sommes nous ?</Dropdown.Item>
-                                    <Dropdown.Item as="a" href="/organigramme" className='hover:bg-gray-100 lg:hover:text-amber-400'>Organigramme</Dropdown.Item>
-                                    <Dropdown.Item as="a" href="/motdg" className='hover:bg-gray-100 lg:hover:text-amber-400'>Mot du DG</Dropdown.Item>
-                                </Dropdown>
+                                <a href="/quisommesnous" className="text-white hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-amber-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">A propos</a>
                             </li>
                             <li>
                                 <Dropdown className="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700" label="" dismissOnClick={false} renderTrigger={() => <span className='text-white cursor-pointer' style={{display:'flex', flexDirection:'row'}}>Actualités<img src={Drop} /></span>} inline>
@@ -111,6 +107,9 @@ function header() {
                                     <Dropdown.Item as="a" href="/aide" className='hover:bg-gray-100 lg:hover:text-amber-400'>Besoin d'aide ?</Dropdown.Item>
                                     <Dropdown.Item as="a" href="/eservice" className='hover:bg-gray-100 lg:hover:text-amber-400'>E-service</Dropdown.Item>
                                 </Dropdown>
+                            </li>
+                            <li>
+                                <a href="/recrutement" className="text-white hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-amber-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Opportunités chez nous</a>
                             </li>
                             <li>
                                 <a href="/FAQ" className="text-white hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-amber-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">FAQs</a>

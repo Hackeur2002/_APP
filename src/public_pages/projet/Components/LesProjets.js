@@ -38,12 +38,12 @@ function LesProjets() {
                                 {value == "tous" ?
                                     ProjetsListe.map((el) => (
                                         <div className="max-w-sm bg-white" key={el.id}>
-                                            <a href="#">
+                                            <a href={`/details-projets/${el.title}`}>
                                                 {el.image ? (<img src={el.image} elt="" />) : ("")}
                                             </a>
                                             <div className="p-5">
                                                 <p><span className='text-gray-300'><i>{el.date}</i></span></p>
-                                                <a href="#">
+                                                <a href={`/details-projets/${el.title}`}>
                                                     <h5 className="mb-2 text-sm font-bold tracking-tight text-black-900 dark:text-white">{el.title}</h5>
                                                 </a>
                                                 <p className="mb-3 font-normal text-sm dark:text-black-200">{el.description}</p>
@@ -56,7 +56,7 @@ function LesProjets() {
                                     )) :
                                     tabEvent.map((el) => (
                                         <div className="max-w-sm bg-white" key={el.id}>
-                                            <a href="#">
+                                            <a href={`/details-projets/${el.title}`}>
                                                 <img src={EventImg} elt="" />
                                             </a>
                                             <div className="p-5">
@@ -66,7 +66,7 @@ function LesProjets() {
                                                         <span className='text-gray-500 text-sm'><i>{el.date}</i></span>
                                                     </span>
                                                 </p>
-                                                <a href="#">
+                                                <a href={`/details-projets/${el.title}`}>
                                                     <h5 className="mb-2 text-sm font-bold tracking-tight text-black-900 dark:text-white">{el.title}</h5>
                                                 </a>
                                                 <p className="mb-3 font-normal text-sm dark:text-black-200">{el.description}</p>
