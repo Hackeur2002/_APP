@@ -200,41 +200,12 @@ export const EvenemntsLists = [
             {
                 id: 5,
                 typeE: "Conférence",
-                contenu: [
-                    {
-                        id: 17,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype: 5,
-                        image:'',
-                        etiquette:'event'
-                    }
-                ]
+                contenu: []
             },
             {
                 id: 6,
                 typeE: "Focus Day",
-                contenu: [
-                    {
-                        id: 18,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype: 6,
-                        image:'https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_640.jpg',
-                        etiquette:'event'
-                    },
-                    {
-                        id: 19,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype: 6,
-                        image:'https://cdn.pixabay.com/photo/2016/03/27/18/53/drinks-1283608_640.jpg',
-                        etiquette:'event'
-                    }
-                ]
+                contenu: []
 
             },
         ],

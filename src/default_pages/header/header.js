@@ -109,7 +109,7 @@ function header() {
                                 </Dropdown>
                             </li>
                             <li>
-                                <a href="/recrutement" className="text-white hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-amber-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Opportunités chez nous</a>
+                                <a href="/recrutement" className="text-white hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-amber-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Opportunités</a>
                             </li>
                             <li>
                                 <a href="/FAQ" className="text-white hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-amber-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">FAQs</a>
