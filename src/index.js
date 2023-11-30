@@ -21,6 +21,7 @@ import EvenementSelect from './public_pages/evenement/evenementSelect/EvenementS
 import ProjetSelect from './public_pages/projet/projetSelect/ProjetSelect';
 import Recrutement from './public_pages/recrutement/Recrutement';
 import RecrutementSelect from './public_pages/recrutement/recrutementSelect/RecrutementSelect';
+import Service from './public_pages/service/Service';
 
 const EventCode = () => {
   const { idEvent } = useParams();
@@ -53,6 +54,7 @@ root.render(
         <Route exact path="eservice" element={<EService />} />
         <Route exact path="guide" element={<Guide />} />
         <Route exact path="recrutement" element={<Recrutement />} />
+        <Route exact path="service" element={<Service />} />
         <Route path="details-evenement/:idEvent" element={<EventCode />} />
         <Route path="details-projets/:idProjet" element={<ProjetCode />} />
         <Route path="details-recrutement/:idRecru" element={<RecrutementCode />} />

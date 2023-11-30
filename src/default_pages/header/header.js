@@ -94,7 +94,7 @@ function header() {
                             <li>
                                 <Dropdown className="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700" label="" dismissOnClick={false} renderTrigger={() => <span className='text-white cursor-pointer' style={{display:'flex', flexDirection:'row'}}>Actualités<img src={Drop} /></span>} inline>
                                     <Dropdown.Item as="a" href="/event" className='hover:bg-gray-100 lg:hover:text-amber-400'>Evènements</Dropdown.Item>
-                                    <Dropdown.Item as="a" href="/communique" className='hover:bg-gray-100 lg:hover:text-amber-400'>Communiqué</Dropdown.Item>
+                                    <Dropdown.Item as="a" href="/communique" className='hover:bg-gray-100 lg:hover:text-amber-400'>Communiqués</Dropdown.Item>
                                     <Dropdown.Item as="a" href="/projet" className='hover:bg-gray-100 lg:hover:text-amber-400'>Projets</Dropdown.Item>
                                 </Dropdown>
                                 
@@ -105,7 +105,8 @@ function header() {
                             <li>
                                 <Dropdown className="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white dark:focus:text-white dark:border-gray-700" label="" dismissOnClick={false} renderTrigger={() => <span className='text-white cursor-pointer' style={{display:'flex', flexDirection:'row'}}>Autres services<img src={Drop} /></span>} inline>
                                     <Dropdown.Item as="a" href="/aide" className='hover:bg-gray-100 lg:hover:text-amber-400'>Besoin d'aide ?</Dropdown.Item>
-                                    <Dropdown.Item as="a" href="/eservice" className='hover:bg-gray-100 lg:hover:text-amber-400'>E-service</Dropdown.Item>
+                                    <Dropdown.Item as="a" href="/eservice" className='hover:bg-gray-100 lg:hover:text-amber-400'>E-services</Dropdown.Item>
+                                    <Dropdown.Item as="a" href="/service" className='hover:bg-gray-100 lg:hover:text-amber-400'>Services</Dropdown.Item>
                                 </Dropdown>
                             </li>
                             <li>

@@ -414,3 +414,255 @@ export const RecrutementsListe = [
         document: ""
     }
 ]
+
+export const GuidesListe = [
+    {
+        id:1,
+        icone:'catalogue_investisseurs.png',
+        titre:"Catalogue des investisseurs",
+        lien:"./Guides/Catalogue des investisseurs.pdf"
+    },
+    {
+        id: 2,
+        icone: "lever_fonds.png",
+        titre: "Ce qu'il faut savoir avant de lever des fonds",
+        lien: "./Guides/Ce qu'il faut savoir avant de lever des fonds.pdf"
+    },
+    {
+        id: 3,
+        icone: "com_lever_fonds.png",
+        titre: "Commencer à lever des fonds",
+        lien: "./Guides/Commencer à lever des fonds.pdf"
+    },
+    {
+        id: 4,
+        icone: "ecosysteme.png",
+        titre: "Connaître son écosystème startup",
+        lien: "./Guides/Connaître son écosystème startup.pdf"
+    },
+    {
+        id: 5,
+        icone: "cycle_fond.png",
+        titre: "Cycle de levée de fonds",
+        lien: "./Guides/Cycle de levée de fonds.pdf"
+    },
+    {
+        id: 6,
+        icone: "jargon_invest.png",
+        titre: "Le jargon de l’investisseur",
+        lien: "./Guides/Le jargon de l’investisseur.pdf"
+    },
+    {
+        id: 7,
+        icone: "choses_a_savoir.png",
+        titre: "Les 4 choses à savoir par les fondateurs sur la levée de fonds au Bénin",
+        lien: "./Guides/Les 4 choses à savoir par les fondateurs sur la levée de fonds au Bénin.pdf"
+    },
+    {
+        id: 8,
+        icone: "instru_finance.png",
+        titre: "Les instruments et structures de financement",
+        lien: "./Guides/Les instruments et structures de financement.pdf"
+    },
+    {
+        id: 9,
+        icone: "choix.png",
+        titre: "Lever ou ne pas lever des fonds au Bénin",
+        lien: "./Guides/Lever ou ne pas lever des fonds au Bénin.pdf"
+    },
+    {
+        id: 10,
+        icone: "ressource.png",
+        titre: "Liste des ressources",
+        lien: "./Guides/Liste des ressources.pdf"
+    },
+    {
+        id: 11,
+        icone: "cloture.png",
+        titre: "Passer à la clôture de levée des fonds",
+        lien: "./Guides/Passer à la clôture de levée des fonds.pdf"
+    },
+    {
+        id: 12,
+        icone: "que_faire_après.png",
+        titre: "Que faites-vous après la clôture de levée des fonds",
+        lien: "./Guides/Que faites-vous après la clôture de levée des fonds.pdf"
+    },
+    {
+        id: 13,
+        icone: "apprendre.png",
+        titre: "Que pouvez-vous apprendre des autres startups qui ont parcouru ce chemin",
+        lien: "./Guides/Que pouvez-vous apprendre des autres startups qui ont parcouru ce chemin.pdf"
+    },
+    {
+        id: 14,
+        icone: "support.png",
+        titre: "Quel écosystème de support et les options qui s'offrent à vous",
+        lien: "./Guides/Quel écosystème de support et les options qui s'offrent à vous.pdf"
+    },
+    {
+        id: 15,
+        icone: "reglementation.png",
+        titre: "Quelles réglementations vous impactent en tant que startup",
+        lien: "./Guides/Quelles réglementations vous impactent en tant que startup.pdf"
+    },
+    {
+        id: 16,
+        icone: "type_invest.png",
+        titre: "Stades et types d’investissement - types d'investisseurs",
+        lien: "./Guides/Stades et types d’investissement - types d'investisseurs.pdf"
+    },
+]
+
+export const ServicesList = [
+    {
+        id: 1,
+        titre: "Orientation et Catégorisation",
+        subTitle: [
+            {
+                id: 1,
+                titre: "Orientation des MPME",
+            },
+            {
+                id: 2,
+                titre: "Catégorisation au statut de MPME",
+            },
+        ]
+    },
+    {
+        id: 2,
+        titre: "Soutien à l'entrepreneuriat",
+        subTitle: [
+            {
+                id: 1,
+                titre: "Information et conseils",
+            },
+            {
+                id: 2,
+                titre: "Formation",
+            },
+            {
+                id: 3,
+                titre: "Coaching et mentorat",
+            },
+        ]
+    },
+    {
+        id: 3,
+        titre: "Soutien à la croissance et à la compétitivité",
+        subTitle: [
+            {
+                id: 1,
+                titre: "Transformation et mise à niveau",
+            },
+            {
+                id: 2,
+                titre: "Promotion des champions nationaux",
+            },
+        ]
+    },
+    {
+        id: 4,
+        titre: "Développement des talents et des compétences",
+        subTitle: [
+            {
+                id: 1,
+                titre: "Leadership developement",
+            },
+            {
+                id: 2,
+                titre: "Renforcement de l'expertise interne",
+            },
+        ]
+    },
+    {
+        id: 5,
+        titre: "Soutien aux entreprises en difficultés",
+        subTitle: [
+            {
+                id: 1,
+                titre: "Aides et assistance au redressement",
+            },
+        ]
+    },
+    {
+        id: 6,
+        titre: "Boîtes à outils et réseautage",
+        subTitle: [
+            {
+                id: 1,
+                titre: "Boîtes à outils pour les entreprises",
+            },
+            {
+                id: 2,
+                titre: "Réseau des partenaires",
+            },
+            {
+                id: 3,
+                titre: "Transformation digitale",
+            },
+        ]
+    },
+    {
+        id: 7,
+        titre: "Startups Programmes",
+        subTitle: [
+            {
+                id: 1,
+                titre: "Soutien à la création des statups",
+            },
+            {
+                id: 2,
+                titre: "Accompagnement technique à l'accélération",
+            },
+            {
+                id: 3,
+                titre: "Aide à la recherche de financement",
+            },
+        ]
+    },
+    {
+        id: 8,
+        titre: "Accès aux marchés",
+        subTitle: [
+            {
+                id: 1,
+                titre: "Sous-traitance et co-traitance (Bourse des PME)",
+            },
+            {
+                id: 2,
+                titre: "Ressources de recherche de marchés",
+            },
+        ]
+    },
+    {
+        id: 9,
+        titre: "Programmes et Projets",
+        subTitle: [
+            {
+                id: 1,
+                titre: "PAEB",
+            },
+            {
+                id: 2,
+                titre: "PFP2E",
+            },
+            {
+                id: 3,
+                titre: "ProPME",
+            },
+            {
+                id: 4,
+                titre: "PAPEAF",
+            },
+            {
+                id: 5,
+                titre: "BeniBiz",
+            },
+            {
+                id: 6,
+                titre: "Etc",
+            },
+        ]
+    },
+]

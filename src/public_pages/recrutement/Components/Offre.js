@@ -9,7 +9,7 @@ function Offre(props) {
                     <span className='text-4xl font-bold'>Nos offres d'emploi</span>
                 </div>
                 <div className="max-md:flex max-md:flex-col grid grid-cols-4 gap-4">
-                    {RecrutementsListe.length <= 0 ? (<span>Aucun projet pour le moment</span>) : 
+                    {RecrutementsListe.length <= 0 ? (<span>Aucun Offre pour le moment</span>) : 
                         RecrutementsListe.map((re)=>(
                             <div>
                                 <div className="max-md:w-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
