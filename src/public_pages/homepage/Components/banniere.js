@@ -12,7 +12,7 @@ function banniere() {
                     Le guichet unique de promotion des Petites et Moyennes Entreprises et des Petites et Moyennes Industries au Bénin.
                 </p>
                 <div className="flex flex-col space-y-4 sm:flex-row sm:justify-left sm:space-y-0 animate-flip-up animate-once animate-duration-1000 animate-delay-300">
-                    <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-l-lg rounded-tr-lg border-amber-700 bg-amber-500 hover:bg-amber-300 hover:border-amber-500 focus:ring-4 focus:ring-amber-300 dark:focus:ring-amber-900 border-b-4">
+                    <a href="/guide" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-l-lg rounded-tr-lg border-amber-700 bg-amber-500 hover:bg-amber-300 hover:border-amber-500 focus:ring-4 focus:ring-amber-300 dark:focus:ring-amber-900 border-b-4">
                         Consulter les guides
                         <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>

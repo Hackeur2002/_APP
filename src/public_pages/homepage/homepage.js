@@ -13,6 +13,7 @@ function homepage(props) {
             <Actualite />
             <Guide />
             <Evenement />
+            <Counter />
             <FAQ_home />
             
         </>

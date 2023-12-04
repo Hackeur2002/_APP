@@ -11,7 +11,7 @@ function Description() {
                     {FAQLIST.map((donnelist,index) => {
                             const newTab = [...donnelist.questions];
                             return (
-                                <div className='px-20 bg-gray-100 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15' key={index}>
+                                <div className='px-20 bg-gray-10 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15' key={index}>
                                     {newTab.id == null ? 
                                         (
                                             <>

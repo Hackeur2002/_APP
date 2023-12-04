@@ -4,9 +4,9 @@ import { Accordion } from 'flowbite-react';
 
 function FAQ_home() {
     return (
-        <section className="bg-gray-100 dark:bg-gray-900 py-10">
+        <section className="bg-white dark:bg-gray-900 py-10">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-left lg:py-16">
-                <h1 className="text-left pb-5">
+                <h1 className="text-center pb-5">
                     <span className="text-3xl font-bold dark:text-white mr-5">Quelques questions fréquemment posées</span>
                     <a className='hover:underline inline-flex text-amber-700 items-center' href="/FAQ">
                         <span>voir tout</span>
