@@ -16,8 +16,12 @@ function Description() {
                 <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div className="animate-fade-right animate-once animate-duration-1000 animate-delay-300 animate-ease-linear font-light text-black sm:text-lg dark:text-black">
                         <h2 className="mb-4 text-4xl tracking-tight font-bold text-black dark:text-white">PRESENTATION DE L’ADPME</h2>
-                        <p className="mb-4">Dans le cadre de la mise en œuvre de son programme d’actions 2021-2026, le Gouvernement a approuvé, le 23 mars 2022, la réforme du Guichet Unique des Petites et Moyennes Entreprises (PME). Cette réforme phare a conduit à la création de l’Agence de Développement des PME (ADPME) par Décret n°2022-199 du 23 mars 2022.
-                            En tant que Guichet Unique, l’ADPME a pour vocation de fédérer et de mettre en cohérence l’ensemble des interventions publiques d’appui par une offre intégrée d’accompagnement, d’orientation et de financement des MPME.</p>
+                        <p className="mb-4">
+                            L'Agence de Développement des Petites et Moyennes Entreprises
+                            a pour vocation <span className='text-amber-500 font-bold'>de fédérer et de mettre en cohérence
+                            l'ensemble des interventions publiques en appui aux MPME
+                            avec une offre intégrée d'accompagnement, d'orientation et de financement des MPME</span>.
+                        </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mt-8">
                         <div>
