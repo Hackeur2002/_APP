@@ -293,39 +293,17 @@ export const Organisation = [
 export const ProjetsListe = [
     {
         id:1,
-        title:"PROJET 1",
-        description:"CECI EST LE PROJET 1",
-        statut:"t",
+        title:"RISE",
+        subTitle: "RISE – Projet d’accompagnement des PME",
+        description: "RISE – Projet d’accompagnement des PME",
+        statut:"o",
         date:"17/12/2023",
-        image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/2023-10/WOBIZZ.jpg?itok=uGJvEoNl',
+        image:'https://cdn1.vc4a.com/media/2023/10/RISE_BANDEAU_1200-x-300-1280x300.jpg',
         soutien:"Financier",
         secteur:"Tous les secteurs",
-        orga:"FinLab Organisation"
-    },
-    {
-        id: 2,
-        title: "PROJET 2",
-        description: "CECI EST LE PROJET 2",
-        statut: "bt",
-        date:"17/12/2023",
-        image:'https://1819.brussels/sites/default/files/styles/event_logo/public/eighteennineteen/logos/port_de_bruxelles.jpeg?itok=Ho2A9Jdd'
-    },
-    {
-        id: 3,
-        title: "PROJET 3",
-        description: "CECI EST LE PROJET 3",
-        statut: "o",
-        date:"17/12/2023",
-        image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/eighteennineteen/logos/VillageFinance_logo_FR.jpg?itok=ldAV4TL7'
-    },
-    {
-        id: 4,
-        title: "PROJET 4",
-        description: "CECI EST LE PROJET 4",
-        statut: "bt",
-        date:"17/12/2023",
-        image:'https://1819.brussels/sites/default/files/styles/event_logo_mobile/public/eighteennineteen/logos/port_de_bruxelles.jpeg?itok=DFi8XRj2'
-    },
+        orga:"FinLab Organisation",
+        lienIns:'https://vc4a.com/rise/rise-2024/'
+    }
 ]
 
 export const CommuniqueListe = [
@@ -635,34 +613,3 @@ export const ServicesList = [
             },
         ]
     },
-    {
-        id: 9,
-        titre: "Programmes et Projets",
-        subTitle: [
-            {
-                id: 1,
-                titre: "PAEB",
-            },
-            {
-                id: 2,
-                titre: "PFP2E",
-            },
-            {
-                id: 3,
-                titre: "ProPME",
-            },
-            {
-                id: 4,
-                titre: "PAPEAF",
-            },
-            {
-                id: 5,
-                titre: "BeniBiz",
-            },
-            {
-                id: 6,
-                titre: "Etc",
-            },
-        ]
-    },
-]
