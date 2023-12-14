@@ -4,11 +4,11 @@ import { GuidesListe } from '../../../NoSQL';
 
 function LesGuides(props) {
     return (
-        <div className='max-xl:px-14 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
+        <div className='max-xl:px-14 px-14 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
             <div className="lg:grid lg:grid-cols-4 lg:gap-4 sm:flex sm:flex-col">
                 {GuidesListe.length <= 0 ? (<span>Aucun projet pour le moment</span>) :
                     GuidesListe.map((guide) => (
-                        <div className="text-left max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <div key={guide.id} className="text-left max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div>
                                 <img className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" src={`/icone_guides/${guide.icone}`} />
                                 <a target='_blank' href={guide.lien}>

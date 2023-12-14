@@ -11,7 +11,7 @@ function Description(props) {
     const selectedEvent = event[0];
     return (
         <>
-            <div className='max-xl:px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
+            <div className='max-xl:px-14 px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
                 <div className="max-md:flex max-md:flex-col grid grid-cols-2 gap-4">
                     <div>
                         <div className='mb-10'>

@@ -4,7 +4,7 @@ import React from 'react';
 function FormCandidature(props) {
     return (
         <>
-            <div className='max-xl:px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
+            <div className='max-xl:px-14 px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
                 <div className='mb-10'>
                     <span className='text-4xl font-bold'>Candidatez de façon spontanée</span><br/>
                     <span className='text-2xl'>En remplissant le formulaire suivant :</span>

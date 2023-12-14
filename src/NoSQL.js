@@ -1,7 +1,7 @@
 export const Accordeon = [
     {
-        id: 1, 
-        title: "Qu'est-ce-que l'ADPME ?", 
+        id: 1,
+        title: "Qu'est-ce-que l'ADPME ?",
         description: "Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons,dropdowns, modals, navbars, and more."
     },
     {
@@ -62,8 +62,8 @@ export const FAQLIST = [
 
 export const TypeEvent = [
     {
-        id:1,
-        title:"Type 1"
+        id: 1,
+        title: "Type 1"
     },
     {
         id: 2,
@@ -77,9 +77,9 @@ export const TypeEvent = [
 
 export const Produit = [
     {
-        id:1,
-        title:"Prod 1",
-        description:"Ceci est la description du prod 1"
+        id: 1,
+        title: "Prod 1",
+        description: "Ceci est la description du prod 1"
     },
     {
         id: 2,
@@ -94,123 +94,123 @@ export const Produit = [
 ]
 
 export const EvenemntsLists = [
-    {
-        id:1,
-        libelle:"THEME",
-        type:[
-            {
-                id:1,
-                typeE:"Assurances, fiscalité & comptabilité",
-                contenu: [
-                    {
-                        id: 10,
-                        titre: "LE FINANCEMENT CITOYEN",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype:1,
-                        image:'https://cdn.pixabay.com/photo/2017/02/16/12/12/business-woman-2071342_640.jpg',
-                        etiquette:'event',
-                        lieu:"Cotonou",
-                        langue:"Français",
-                        prix:"Gratuit",
-                        adresse:"Cotonou Mènontin 1014 Rue Hôpital de Mènontin Bénin"
-                    },
-                    {
-                        id: 11,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype:1,
-                        image:'https://cdn.pixabay.com/photo/2018/04/28/12/39/new-year-3357190_640.jpg',
-                        etiquette:'event'
-                    }
-                ]
-            },
-            {
-                id: 2,
-                typeE: "Avant de démarrer une entreprise",
-                contenu:[
-                    {
-                        id: 12,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype:2,
-                        image:'https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_640.jpg',
-                        etiquette:'event'
-                    }
-                ]
-            },
-            {
-                id: 3,
-                typeE: "Démarrer une entreprise & formalités",
-                contenu: [
-                    {
-                        id: 13,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype:3,
-                        image:'https://cdn.pixabay.com/photo/2018/02/03/09/51/bulletin-board-3127287_640.jpg',
-                        etiquette:'event'
-                    },
-                    {
-                        id: 14,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype:3,
-                        image:'https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_640.png',
-                        etiquette:'event'
-                    }
-                ]
+    // {
+    //     id:1,
+    //     libelle:"THEME",
+    //     type:[
+    //         {
+    //             id:1,
+    //             typeE:"Assurances, fiscalité & comptabilité",
+    //             contenu: [
+    //                 {
+    //                     id: 10,
+    //                     titre: "LE FINANCEMENT CITOYEN",
+    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+    //                     date: "NOV-14",
+    //                     idtype:1,
+    //                     image:'https://cdn.pixabay.com/photo/2017/02/16/12/12/business-woman-2071342_640.jpg',
+    //                     etiquette:'event',
+    //                     lieu:"Cotonou",
+    //                     langue:"Français",
+    //                     prix:"Gratuit",
+    //                     adresse:"Cotonou Mènontin 1014 Rue Hôpital de Mènontin Bénin"
+    //                 },
+    //                 {
+    //                     id: 11,
+    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+    //                     date: "NOV-14",
+    //                     idtype:1,
+    //                     image:'https://cdn.pixabay.com/photo/2018/04/28/12/39/new-year-3357190_640.jpg',
+    //                     etiquette:'event'
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 2,
+    //             typeE: "Avant de démarrer une entreprise",
+    //             contenu:[
+    //                 {
+    //                     id: 12,
+    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+    //                     date: "NOV-14",
+    //                     idtype:2,
+    //                     image:'https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_640.jpg',
+    //                     etiquette:'event'
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 3,
+    //             typeE: "Démarrer une entreprise & formalités",
+    //             contenu: [
+    //                 {
+    //                     id: 13,
+    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+    //                     date: "NOV-14",
+    //                     idtype:3,
+    //                     image:'https://cdn.pixabay.com/photo/2018/02/03/09/51/bulletin-board-3127287_640.jpg',
+    //                     etiquette:'event'
+    //                 },
+    //                 {
+    //                     id: 14,
+    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+    //                     date: "NOV-14",
+    //                     idtype:3,
+    //                     image:'https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_640.png',
+    //                     etiquette:'event'
+    //                 }
+    //             ]
 
-            },
-        ],
-        
-    },
-    {
-        id: 2,
-        libelle: "TYPE D'EVENEMENT",
-        type: [
-            {
-                id: 4,
-                typeE: "Atelier-séminaire",
-                contenu: [
-                    {
-                        id: 15,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype: 4,
-                        image:'https://pixabay.com/fr/photos/concert-confettis-c%C3%A9l%C3%A9bration-2527495/',
-                        etiquette:'event'
-                    },
-                    {
-                        id: 16,
-                        titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
-                        description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-                        date: "NOV-14",
-                        idtype: 4,
-                        image:'https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_640.jpg',
-                        etiquette:'event'
-                    }
-                ]
-            },
-            {
-                id: 5,
-                typeE: "Conférence",
-                contenu: []
-            },
-            {
-                id: 6,
-                typeE: "Focus Day",
-                contenu: []
+    //         },
+    //     ],
 
-            },
-        ],
+    // },
+    // {
+    //     id: 2,
+    //     libelle: "TYPE D'EVENEMENT",
+    //     type: [
+    //         {
+    //             id: 4,
+    //             typeE: "Atelier-séminaire",
+    //             contenu: [
+    //                 {
+    //                     id: 15,
+    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+    //                     date: "NOV-14",
+    //                     idtype: 4,
+    //                     image:'https://pixabay.com/fr/photos/concert-confettis-c%C3%A9l%C3%A9bration-2527495/',
+    //                     etiquette:'event'
+    //                 },
+    //                 {
+    //                     id: 16,
+    //                     titre: "LE FINANCEMENT CITOYEN: FOCUS SUR QUELQUES ORGANISMES PRIVÉS QUI FINANCENT L'ÉCONOMIE SOCIALE",
+    //                     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+    //                     date: "NOV-14",
+    //                     idtype: 4,
+    //                     image:'https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_640.jpg',
+    //                     etiquette:'event'
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 5,
+    //             typeE: "Conférence",
+    //             contenu: []
+    //         },
+    //         {
+    //             id: 6,
+    //             typeE: "Focus Day",
+    //             contenu: []
 
-    }
+    //         },
+    //     ],
+
+    // }
 ]
 
 export const ActualitesLists = [
@@ -249,9 +249,9 @@ export const ActualitesLists = [
 
 export const Organisation = [
     {
-        id:1,
-        nom:"Organisation 1",
-        description:"Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+        id: 1,
+        nom: "Organisation 1",
+        description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
     },
     {
         id: 2,
@@ -292,26 +292,61 @@ export const Organisation = [
 
 export const ProjetsListe = [
     {
-        id:1,
-        title:"RISE",
+        id: 1,
+        title: "RISE",
         subTitle: "RISE – Projet d’accompagnement des PME",
         description: "RISE – Projet d’accompagnement des PME",
-        statut:"o",
-        date:"17/12/2023",
-        image:'https://cdn1.vc4a.com/media/2023/10/RISE_BANDEAU_1200-x-300-1280x300.jpg',
-        soutien:"Financier",
-        secteur:"Tous les secteurs",
-        orga:"FinLab Organisation",
-        lienIns:'https://vc4a.com/rise/rise-2024/'
+        statut: "o",
+        datedeb: "04/12/23",
+        datefin: "15/01/24",
+        image: 'https://cdn1.vc4a.com/media/2023/10/RISE_BANDEAU_1200-x-300-1280x300.jpg',
+        soutien: "Financier",
+        secteur: "Agribusiness, Light industry, Creative and cultural industries, High value-added services, Services and industries for a sustainable city",
+        orga: "RISE",
+        lienIns: 'https://vc4a.com/rise/rise-2024/application/formulaire-de-demande/',
+        lienLogo: "https://semecity.bj/wp-content/uploads/2023/12/LOGO_RISE.svg"
+    }
+]
+
+export const ActualitePrincipal = [
+    {
+        id: 1,
+        title: "RISE",
+        subTitle: "RISE – Projet d’accompagnement des PME",
+        description: "L’Agence de développement de Sèmè City (Sèmè City) et l’Agence de Développement des PME(ADPME), sous l’impulsion du Ministère de l’Économie et des Finances, et avec le soutien de la Banque mondiale, de l’Union Européenne et de l’AFD annoncent le lancement de RISE.Ce programme vise à accompagner la croissance et la résilience des PME et jeunes entreprises béninoises à fort potentiel, en facilitant l’accès à un financement et à une assistance technique personnalisée.",
+        statut: "o",
+        datedeb: "04/12/23",
+        datefin: "15/01/24",
+        image: 'https://cdn1.vc4a.com/media/2023/10/RISE_BANDEAU_1200-x-300-1280x300.jpg',
+        soutien: "Financier",
+        secteur: "Agribusiness, Light industry, Creative and cultural industries, High value-added services, Services and industries for a sustainable city",
+        orga: "RISE",
+        lienIns: 'https://vc4a.com/rise/rise-2024/',
+        lienLogo: "https://semecity.bj/wp-content/uploads/2023/12/LOGO_RISE.svg"
     }
 ]
 
 export const CommuniqueListe = [
-    // {
-    //     id: 1,
-    //     description: "CECI EST LE COMMUNIQUE 1",
-    //     date:"17/18/2023"
-    // },
+    {
+        id: 1,
+        titre: "Le gouvernement lance le programme RISE pour accélérer la croissance des PME et jeunes entreprises innovantes béninoises à fort potentiel",
+        description: `L’Agence de développement de Sèmè City (Sèmè City) et l’Agence de Développement des PME (ADPME), sous l’impulsion du Ministère de l’Économie et des Finances, et avec le soutien de la Banque mondiale, de l’Union Européenne et de l’AFD annoncent le lancement de RISE. Ce programme vise à accompagner la croissance et la résilience des PME et jeunes entreprises béninoises à fort potentiel, en facilitant l’accès à un financement et à une assistance technique personnalisée.
+        
+RISE a pour objectif de stimuler la compétitivité des PME à fort potentiel et des jeunes entreprises innovantes en accompagnant le financement de leur stratégie d’expansion. Les secteurs prioritairement ciblés visent à favoriser le développement économique durable au Bénin, notamment la production et les services liés aux secteurs de l’agro-industriel, de la ville durable, de l’industrie légère, du tourisme, des industries créatives et culturelles ainsi que les services à haute valeur ajoutée tels que la logistique et le transport.
+
+A travers la constitution d’un vivier de nouveaux champions nationaux, RISE participe au développement du secteur privé béninois, à la création d’emplois durables et au renforcement de l’inclusion économique et sociale sur l’ensemble du territoire.
+
+Pour répondre aux besoins spécifiques de développement commercial des entreprises qui seront sélectionnées, RISE met en place un dispositif comprenant un appui financier pouvant atteindre 30 millions de FCFA moyennant une contrepartie à mobiliser par l’entreprise sous forme de fonds propres et/ou de crédits. Le dispositif comprend également une assistance technique personnalisée incluant formation, coaching et networking pour maximiser l’impact de l’appui financier.
+
+D’autres mécanismes de facilitation de l’accès au crédit et à l’investissement viendront progressivement enrichir ce dispositif, à travers un partenariat privilégié avec les établissement financiers et investisseurs.
+
+L’appel à candidatures pour RISE est ouvert jusqu’au 04 mars 2024. Pour faire partie de la première cohorte, les entreprises sont invitées à postuler en ligne sur le site www.rise.bj avant la date limite de dépôt de dossier fixée au 15 janvier 2024.
+        
+        `,
+        date: "07/12/2023",
+        lien: "../Communiques/RISE.pdf",
+        image: 'https://cdn1.vc4a.com/media/2023/10/RISE_BANDEAU_1200-x-300-1280x300.jpg',
+    },
     // {
     //     id: 2,
     //     description: "CECI EST LE COMMUNIQUE 2",
@@ -355,50 +390,50 @@ export const EService = [
 ]
 
 export const RecrutementsListe = [
-    {
-        id:1,
-        titre:"DÉVELOPPEUR D’AFFAIRES",
-        subTitle: "Nous recherchons un Business développer qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
-        organisation:"ADPME",
-        dateOuverture:"14/11/23",
-        dateFermetture:"14/12/23",
-        document:""
-    },
-    {
-        id:2,
-        titre:"MARKETING",
-        subTitle: "Nous recherchons un Marketicien qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
-        organisation:"ADPME",
-        dateOuverture:"14/11/23",
-        dateFermetture:"14/12/23",
-        document:""
-    },
-    {
-        id: 3,
-        titre: "RESPONSABLE LOGISTIC SENIOR",
-        subTitle: "Nous recherchons un chargé de la logistique senior qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
-        organisation: "ADPME",
-        dateOuverture: "14/11/23",
-        dateFermetture: "14/12/23",
-        document: ""
-    },
-    {
-        id: 4,
-        titre: "SENIOR PROJECT MANAGER",
-        subTitle: "Nous recherchons un gestionnaire de projet senior qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
-        organisation: "ADPME",
-        dateOuverture: "14/11/23",
-        dateFermetture: "14/12/23",
-        document: ""
-    }
+    // {
+    //     id:1,
+    //     titre:"DÉVELOPPEUR D’AFFAIRES",
+    //     subTitle: "Nous recherchons un Business développer qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
+    //     organisation:"ADPME",
+    //     dateOuverture:"14/11/23",
+    //     dateFermetture:"14/12/23",
+    //     document:""
+    // },
+    // {
+    //     id:2,
+    //     titre:"MARKETING",
+    //     subTitle: "Nous recherchons un Marketicien qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
+    //     organisation:"ADPME",
+    //     dateOuverture:"14/11/23",
+    //     dateFermetture:"14/12/23",
+    //     document:""
+    // },
+    // {
+    //     id: 3,
+    //     titre: "RESPONSABLE LOGISTIC SENIOR",
+    //     subTitle: "Nous recherchons un chargé de la logistique senior qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
+    //     organisation: "ADPME",
+    //     dateOuverture: "14/11/23",
+    //     dateFermetture: "14/12/23",
+    //     document: ""
+    // },
+    // {
+    //     id: 4,
+    //     titre: "SENIOR PROJECT MANAGER",
+    //     subTitle: "Nous recherchons un gestionnaire de projet senior qui aura pour charge de développer des produits et services pétroliers à l'échelle nationale et internationale",
+    //     organisation: "ADPME",
+    //     dateOuverture: "14/11/23",
+    //     dateFermetture: "14/12/23",
+    //     document: ""
+    // }
 ]
 
 export const GuidesListe = [
     {
-        id:1,
-        icone:'catalogue_investisseurs.png',
-        titre:"Catalogue des investisseurs",
-        lien:"./Guides/Catalogue des investisseurs.pdf"
+        id: 1,
+        icone: 'catalogue_investisseurs.png',
+        titre: "Catalogue des investisseurs",
+        lien: "./Guides/Catalogue des investisseurs.pdf"
     },
     {
         id: 2,

@@ -63,7 +63,7 @@ function LesProjets() {
                                                 <p>
                                                     <span className='inline-flex'>
                                                         <img className='w-5 h-5' src={cal} />&nbsp;
-                                                        <span className='text-gray-500 text-sm'><i>{el.date}</i></span>
+                                                        <span className='text-gray-500 text-sm'><i>{el.datedeb}</i></span>
                                                     </span>
                                                 </p>
                                                 <a href={`/details-projets/${el.title}`}>

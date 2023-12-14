@@ -12,13 +12,17 @@ const FormContact = () => {
     console.log(mail);
     console.log(tel);
     console.log(msg);
-    axios.post('http://localhost:3000/sendMail',
-      {  subject: mail+ ' '+tel, from:mail, text:nom+'\n'+msg, to:"mtonato@adpme.bj" })
+    axios.post('http://www.adpme.bj/api/sendMail',
+      { subject: mail + ' ' + tel, from: mail, text: nom + '\n' + msg, to: "mtonato@adpme.bj" })
       .then(data => {
-        alert('Soumission réussie')
+        alert('Merci de nous avoir contacté...')
+        setNom('')
+        setMail('')
+        setTel('')
+        setMsg('')
       })
       .catch(err => {
-        alert('Prob')
+        alert('Erreur... Veuillez réessayer plus tard.')
       })
   }
   return (
@@ -32,7 +36,7 @@ const FormContact = () => {
                   ECRIVEZ-NOUS
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                    Nos équipes traiteront votre message et vous contacterons dans les plus brefs délais.
+                  Nos équipes traiteront votre message et vous contacterons dans les plus brefs délais.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -147,7 +151,7 @@ const FormContact = () => {
                       value={mail}
                     />
                   </div>
-                  
+
                   <div className="mb-6">
                     <input
                       type="text"
@@ -157,7 +161,7 @@ const FormContact = () => {
                       value={tel}
                     />
                   </div>
-                  
+
                   <div className="mb-6">
                     <textarea
                       rows="6"

@@ -3,7 +3,7 @@ import { EvenemntsLists } from '../../../NoSQL';
 
 function Evenement() {
     return (
-        <section className="bg-white dark:bg-gray-900">
+        <section className="bg-white dark:bg-gray-900 max-xl:px-14 px-14 mx-auto max-w-screen-xl">
             <div className='px-3 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                 <h3 className="text-left pb-5">
                     <span className="text-3xl font-bold dark:text-white mr-5">Evènements</span>
@@ -17,36 +17,7 @@ function Evenement() {
                 <div className="grid grid-cols-2 gap-4 text-left">
                 {EvenemntsLists.length <= 0 ? 
                         <>
-                            <div role="status" className="max-w-md p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
-                                <div className="flex items-center justify-between">
-                                    <div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                                        <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-                                    </div>
-                                    <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-                                </div>
-                                <span className="sr-only">Loading...</span>
-                            </div>
-                            <div role="status" className="max-w-md p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
-                                <div className="flex items-center justify-between">
-                                    <div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                                        <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-                                    </div>
-                                    <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-                                </div>
-                                <span className="sr-only">Loading...</span>
-                            </div>
-                            <div role="status" className="max-w-md p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
-                                <div className="flex items-center justify-between">
-                                    <div>
-                                        <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                                        <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-                                    </div>
-                                    <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-                                </div>
-                                <span className="sr-only">Loading...</span>
-                            </div>
+                            Aucun évènement pour le moment
                         </>
                     :
                         EvenemntsLists.map((el) => {

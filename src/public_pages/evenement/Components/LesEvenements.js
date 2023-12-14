@@ -26,7 +26,7 @@ function LesEvenements() {
     };
     return (
         <>
-            <div className='max-xl:px-14 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
+            <div className='max-xl:px-14 px-20 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                 {EvenemntsLists.length <= 0 ? (<span>Aucun évènement pour le moment</span>) : 
                     <div className="lg:grid lg:grid-cols-4 lg:gap-4 sm:flex sm:flex-col">
                         <div className="text-left">

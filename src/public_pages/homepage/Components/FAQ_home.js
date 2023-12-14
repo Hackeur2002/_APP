@@ -18,14 +18,16 @@ function FAQ_home() {
                 <Accordion collapseAll>
                     {FAQLIST.map((donne) => {
                         return donne.questions.map((faq)=>(
-                            <Accordion.Panel key={donne.id} className='bg-transparent border-none'>
-                                <Accordion.Title className='text-black hover:bg-gray-200 focus:bg-gray-200 rounded-none'>{faq.question}</Accordion.Title>
-                                <Accordion.Content>
-                                    <p className="mb-2 text-left text-black dark:text-black bg-transparent">
-                                        {faq.reponse}
-                                    </p>
-                                </Accordion.Content>
-                            </Accordion.Panel>
+                            <div key={donne.id}>
+                                <Accordion.Panel className='bg-transparent border-none'>
+                                    <Accordion.Title className='text-black hover:bg-gray-200 focus:bg-gray-200 rounded-none'>{faq.question}</Accordion.Title>
+                                    <Accordion.Content>
+                                        <p className="mb-2 text-left text-black dark:text-black bg-transparent">
+                                            {faq.reponse}
+                                        </p>
+                                    </Accordion.Content>
+                                </Accordion.Panel>
+                            </div>
                         ))
                     })}
                 </Accordion>

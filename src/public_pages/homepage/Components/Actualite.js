@@ -1,86 +1,34 @@
 import React from 'react';
-import actuimg from '../Images/actuessai.jpg'
-import { ActualitesLists } from '../../../NoSQL';
-import cal from '../Images/calendrier.png'
+import { ActualitePrincipal } from '../../../NoSQL';
 
 function Actualite(props) {
     return (
         <section className="bg-white dark:bg-white">
-            <div className='px-3 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
-                <h3 className="text-left pb-5">
-                    <span className="text-3xl font-bold dark:text-white mr-5">Actualités</span>
-                </h3>
-                <div className="grid lg:grid-cols-4 lg:gap-8 text-left grid-cols-2 gap-4">
-                {ActualitesLists.length <= 0 ? 
-
-                        <>
-                            <div role="status" className="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700">
-                                <div className="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
-                                    <svg className="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-                                        <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z" />
-                                        <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
-                                    </svg>
-                                </div>
-                                <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-
-                                <span className="sr-only">Loading...</span>
+            {ActualitePrincipal.map((act)=>(
+                <div className='px-3 mx-auto max-w-screen-xl text-center py-5 lg:py-5 sm:py-5 drop-shadow-2xl'>
+                    <section className="bg-white dark:bg-gray-900">
+                        <div className="gap-16 items-center py-4 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-4 lg:px-4">
+                            <div className='w-full h-full'>
+                                <img className="w-full h-full animate-fade-left animate-once animate-duration-1000 animate-delay-300 animate-ease-linear rounded-lg" src={act.image} alt="office content 2" />
                             </div>
-                            <div role="status" className="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700">
-                                <div className="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
-                                    <svg className="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-                                        <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z" />
-                                        <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
+                            <div className="animate-fade-right animate-once animate-duration-1000 animate-delay-300 animate-ease-linear font-light text-black sm:text-lg dark:text-black text-left">
+                            
+                                <p className="mb-4">
+                                    {act.description}
+                                </p>
+                                <a className='hover:underline inline-flex text-amber-700 items-center' href="/details-projets/RISE">
+                                    <span>Allez voir</span>
+                                    <svg className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
                                     </svg>
-                                </div>
-                                <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-
-                                <span className="sr-only">Loading...</span>
-                            </div>
-                            <div role="status" className="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700">
-                                <div className="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
-                                    <svg className="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-                                        <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z" />
-                                        <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
-                                    </svg>
-                                </div>
-                                <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-                                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-
-                                <span className="sr-only">Loading...</span>
-                            </div>
-                        </>
-                    :
-                        ActualitesLists.map((al) => (
-                            <div className="max-w-sm bg-white">
-                                <a href="#">
-                                    <img src={actuimg} alt="" />
                                 </a>
-                                <div className="p-5">
-                                    <p>
-                                        <span className='inline-flex'>
-                                            <img className='w-5 h-5' src={cal} />&nbsp;
-                                            <span className='text-gray-500 text-sm'><i>{al.date}</i></span>
-                                        </span>
-                                    </p>
-                                    <a href="#">
-                                        <h5 className="mb-2 text-xl font-bold tracking-tight text-black-900 dark:text-white">{al.titre}</h5>
-                                    </a>
-                                    <p className="mb-3 font-normal text-sm dark:text-black-200">{al.description}</p>
-
-                                </div>
                             </div>
-                        ))
-                }
+                            
+                        </div>
+                    </section>
                 </div>
-            </div>
+            ))}
+            
         </section>
     );
 }

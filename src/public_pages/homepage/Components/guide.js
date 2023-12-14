@@ -6,7 +6,7 @@ function guide(props) {
     return (
         <>
             <section className="bg-gray-100 dark:bg-gray-900">
-                <div className='px-3 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
+                <div className='text-center py-24 lg:py-15 sm:py-15 max-xl:px-14 px-14 mx-auto max-w-screen-xl'>
                     <h3 className="text-left pb-5">
                         <span className="text-3xl font-bold dark:text-white mr-5">Guide</span>
                         <a className='hover:underline inline-flex text-amber-700 items-center' href="/guide">

@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from 'react';
 
 
 const Counter = () => {
-    const [compteur, setCompteur] = useState(0);
     // const counterRef = useRef(null);
 
     // const isElementInViewport = () => {
@@ -29,20 +28,51 @@ const Counter = () => {
     //     };
     // }, [count]);
 
+    const counterRef = useRef(null);
+    const [isInView, setIsInView] = useState(false);
+    const [count, setCount] = useState(0);
+
     useEffect(() => {
-        const intervalId = setInterval(() => {
-            // Incrémentation du compteur
-            setCompteur(prevCompteur => prevCompteur + 1);
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5,
+        };
 
-            // Si le compteur atteint 100, on peut effacer l'intervalle pour arrêter le compteur
-            if (compteur === 100) {
-                clearInterval(intervalId);
+        const callback = (entries) => {
+            entries.forEach((entry) => {
+                setIsInView(entry.isIntersecting);
+            });
+        };
+
+        const observer = new IntersectionObserver(callback, options);
+
+        if (counterRef.current) {
+            observer.observe(counterRef.current);
+        }
+
+        return () => {
+            if (counterRef.current) {
+                observer.unobserve(counterRef.current);
             }
-        }, 1000); // Mettez à jour l'intervalle selon vos besoins (ici, toutes les secondes)
+        };
+    }, []);
 
-        // La fonction de nettoyage de l'effet pour éviter les fuites de mémoire
-        return () => clearInterval(intervalId);
-    }, [compteur]);
+    useEffect(() => {
+        let interval;
+
+        if (isInView && count < 10) {
+            // Commencez à compter lorsque le composant est en vue et que le compteur est inférieur à 30
+            interval = setInterval(() => {
+                setCount((prevCount) => prevCount + 1);
+            }, 10); // Incrémentation chaque seconde
+        }
+
+        // Nettoyez l'intervalle lorsque le composant n'est plus en vue ou que le compteur atteint 30
+        return () => {
+            clearInterval(interval);
+        };
+    }, [isInView, count]);
 
     return (
         <>
@@ -54,7 +84,7 @@ const Counter = () => {
                         </h2>
                     </div>
                 </div>
-                <div className="mt-10 pb-1">
+                <div className="mt-10 pb-1" ref={counterRef}>
                     <div className="relative">
                         <div className="absolute inset-0 h-1/2 bg-gray-100"></div>
                         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,26 +94,26 @@ const Counter = () => {
                                         <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                                             Evènements organisés
                                         </dt>
-                                        <dd className="order-1 text-5xl font-extrabold text-gray-700">{compteur}+</dd>
+                                        <dd className="order-1 text-5xl font-extrabold text-gray-700">-</dd>
                                     </div>
                                     <div
                                         className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                                         <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                                             Projets réalisés
                                         </dt>
-                                        <dd className="order-1 text-5xl font-extrabold text-gray-700">{compteur}+</dd>
+                                        <dd className="order-1 text-5xl font-extrabold text-gray-700">-</dd>
                                     </div>
                                     <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                                         <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                                             Formations éffectuées
                                         </dt>
-                                        <dd className="order-1 text-5xl font-extrabold text-gray-700">{compteur}+</dd>
+                                        <dd className="order-1 text-5xl font-extrabold text-gray-700">-</dd>
                                     </div>
                                     <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                                         <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                                             Entreprises accompagnées
                                         </dt>
-                                        <dd className="order-1 text-5xl font-extrabold text-gray-700">{compteur}+</dd>
+                                        <dd className="order-1 text-5xl font-extrabold text-gray-700">-</dd>
                                     </div>
                                 </dl>
                             </div>

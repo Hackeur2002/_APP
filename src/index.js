@@ -22,6 +22,7 @@ import ProjetSelect from './public_pages/projet/projetSelect/ProjetSelect';
 import Recrutement from './public_pages/recrutement/Recrutement';
 import RecrutementSelect from './public_pages/recrutement/recrutementSelect/RecrutementSelect';
 import Service from './public_pages/service/Service';
+import CommuniqueSelect from './public_pages/communique/communiqueSelect/CommuniqueSelect';
 
 const EventCode = () => {
   const { idEvent } = useParams();
@@ -34,6 +35,10 @@ const ProjetCode = () => {
 const RecrutementCode = () => {
   const { idRecru } = useParams();
   return <RecrutementSelect name={idRecru} />;
+};
+const CommuniqueId = () => {
+  const { idCom } = useParams();
+  return <CommuniqueSelect name={idCom} />;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -58,6 +63,7 @@ root.render(
         <Route path="details-evenement/:idEvent" element={<EventCode />} />
         <Route path="details-projets/:idProjet" element={<ProjetCode />} />
         <Route path="details-recrutement/:idRecru" element={<RecrutementCode />} />
+        <Route path="details-communiques/:idCom" element={<CommuniqueId />} />
         <Route index element={<Homepage />} />
       </Route>
     </Routes>

@@ -10,7 +10,9 @@ function homepage(props) {
     return (
         <>
             <Banniere />
+            <br/>
             <Actualite />
+            <br/>
             <Guide />
             <Evenement />
             <Counter />
