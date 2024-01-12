@@ -14,7 +14,7 @@ function Description(props) {
     const selectedCom = communique[0];
     return (
         <>
-            <div className='max-xl:px-14 px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15 w-full'>
+            <div className='max-xl:px-4 px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15 w-full'>
                 <div className="max-md:flex max-md:flex-col mt-10 ml-10">
                     <img src={selectedCom.image} className='w-full' />
                 </div>

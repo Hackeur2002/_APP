@@ -5,21 +5,28 @@ const FormContact = () => {
   const [nom, setNom] = useState('');
   const [mail, setMail] = useState('');
   const [tel, setTel] = useState('');
+  const [sujet, setSujet] = useState('');
   const [msg, setMsg] = useState('');
+  const [isClicked, setIsClicked] = useState(false);
   const LoginForm = (e) => {
     e.preventDefault();
     console.log(nom);
     console.log(mail);
     console.log(tel);
     console.log(msg);
-    axios.post('http://www.adpme.bj/api/sendMail',
-      { subject: mail + ' ' + tel, from: mail, text: nom + '\n' + msg, to: "mtonato@adpme.bj" })
+    const newurl = process.env.REACT_APP_URL_STANDART + 'sendMail'
+    console.log(newurl)
+    setIsClicked(true)
+    axios.post(newurl,
+      { subject: sujet, from: "berylgbe@gmail.com", text: mail + '\n\n' + nom + ' ' + tel + '\n\n' + msg, to: "contact@adpme.bj" })
       .then(data => {
         alert('Merci de nous avoir contacté...')
         setNom('')
         setMail('')
         setTel('')
         setMsg('')
+        setSujet('')
+        setIsClicked(false)
       })
       .catch(err => {
         alert('Erreur... Veuillez réessayer plus tard.')
@@ -27,7 +34,7 @@ const FormContact = () => {
   }
   return (
     <>
-      <section className="px-20 text-center relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
+      <section className="max-xl:px-4 px-14 mx-auto max-w-screen-xl text-center relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12 text-left">
@@ -139,6 +146,7 @@ const FormContact = () => {
                       className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
                       onChange={(e) => setNom(e.target.value)}
                       value={nom}
+                      required
                     />
                   </div>
 
@@ -149,6 +157,7 @@ const FormContact = () => {
                       className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
                       onChange={(e) => setMail(e.target.value)}
                       value={mail}
+                      required
                     />
                   </div>
 
@@ -159,6 +168,18 @@ const FormContact = () => {
                       className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
                       onChange={(e) => setTel(e.target.value)}
                       value={tel}
+                      required
+                    />
+                  </div>
+
+                  <div className="mb-6">
+                    <input
+                      type="text"
+                      placeholder="Votre Sujet"
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                      onChange={(e) => setSujet(e.target.value)}
+                      value={sujet}
+                      required
                     />
                   </div>
 
@@ -171,14 +192,16 @@ const FormContact = () => {
                       defaultValue=""
                       onChange={(e) => setMsg(e.target.value)}
                       value={msg}
+                      required
                     />
                   </div>
                   <div>
                     <button
+                      disabled={isClicked}
                       type="submit"
-                      className="w-full rounded border border-primary p-3 text-white transition hover:bg-opacity-90"
+                      className="w-full bg-amber-500 hover:bg-amber-400 border-b-4 border-amber-700 hover:border-amber-500 rounded-l-lg rounded-tr-lg p-3 text-white transition hover:bg-opacity-90"
                     >
-                      <span className="text-black">Envoyer</span>
+                      <span>Envoyer</span>
                     </button>
                   </div>
                 </form>

@@ -23,6 +23,7 @@ import Recrutement from './public_pages/recrutement/Recrutement';
 import RecrutementSelect from './public_pages/recrutement/recrutementSelect/RecrutementSelect';
 import Service from './public_pages/service/Service';
 import CommuniqueSelect from './public_pages/communique/communiqueSelect/CommuniqueSelect';
+import PMEForm from './public_pages/PMEForm/PMEForm';
 
 const EventCode = () => {
   const { idEvent } = useParams();
@@ -60,6 +61,7 @@ root.render(
         <Route exact path="guide" element={<Guide />} />
         <Route exact path="recrutement" element={<Recrutement />} />
         <Route exact path="service" element={<Service />} />
+        <Route exact path="pme-form" element={<PMEForm />} />
         <Route path="details-evenement/:idEvent" element={<EventCode />} />
         <Route path="details-projets/:idProjet" element={<ProjetCode />} />
         <Route path="details-recrutement/:idRecru" element={<RecrutementCode />} />

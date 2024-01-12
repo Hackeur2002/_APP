@@ -3,8 +3,8 @@ import { EvenemntsLists } from '../../../NoSQL';
 
 function Evenement() {
     return (
-        <section className="bg-white dark:bg-gray-900 max-xl:px-14 px-14 mx-auto max-w-screen-xl">
-            <div className='px-3 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
+        <section className="bg-white dark:bg-gray-900 max-xl:px-4 px-14 mx-auto max-w-screen-xl">
+            <div className='mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                 <h3 className="text-left pb-5">
                     <span className="text-3xl font-bold dark:text-white mr-5">Evènements</span>
                     <a className='hover:underline inline-flex text-amber-700 items-center' href="/event">
@@ -14,7 +14,7 @@ function Evenement() {
                         </svg>
                     </a>
                 </h3>
-                <div className="grid grid-cols-2 gap-4 text-left">
+                <div className="grid grid-cols-2 gap-4 text-left max-md:flex max-md:flex-col">
                 {EvenemntsLists.length <= 0 ? 
                         <>
                             Aucun évènement pour le moment
@@ -28,14 +28,13 @@ function Evenement() {
                                     <div key={lc.id}>
 
                                         <a href={`/details-evenement/${lc.titre}`} className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                            <div className='p-2 w-40'>
-                                                <h5 className="mb-2 font-400 tracking-tight text-gray-900 dark:text-white">{lc.date}</h5>
-                                            </div>
-                                            <div className="flex flex-col justify-between p-4 leading-normal">
+                                            
+                                            <div className="flex flex-col p-4 leading-normal">
                                                 <h5 className="text-xl mb-2 font-bold tracking-tight text-gray-900 dark:text-white">{lc.titre}</h5>
                                                 <p className="mb-3 font-normal text-sm dark:text-gray-400">
-                                                    <span>{lc.description}</span>
+                                                    <span>{lc.subTitle}</span>
                                                 </p>
+                                                <h5 className="mb-2 font-400 tracking-tight text-gray-900 dark:text-white">{lc.date}</h5>
                                             </div>
                                         </a>
 

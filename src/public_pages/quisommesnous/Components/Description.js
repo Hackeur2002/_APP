@@ -12,7 +12,7 @@ import priorite from '../Images/priorite.png'
 function Description() {
     return (
         <>
-            <section className='max-xl:px-14 px-14 mx-auto max-w-screen-xl'>
+            <section className='max-xl:px-4 px-14 mx-auto max-w-screen-xl'>
                 <section className="bg-white dark:bg-gray-900">
                     <div className="gap-16 items-center py-8 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16">
                         <div className="animate-fade-right animate-once animate-duration-1000 animate-delay-300 animate-ease-linear font-light text-black sm:text-lg dark:text-black">
@@ -26,16 +26,16 @@ function Description() {
                         </div>
                         <div className="grid grid-cols-2 gap-4 mt-8">
                             <div>
-                                {/* <img className="w-full rounded-lg" src={pres1} alt="office content 1" /> */}
+                                {/* <img className="max-xl:hidden w-full rounded-lg" src={pres1} alt="office content 1" /> */}
                             </div>
-                            <img className="animate-fade-left animate-once animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={pres2} alt="office content 2" />
+                            <img className="max-xl:hidden animate-fade-left animate-once animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={pres2} alt="office content 2" />
                         </div>
                     </div>
                 </section>
                 <section className="bg-white dark:bg-gray-900">
-                    <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div className="gap-16 items-center py-8  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                         <div style={{ width: '50%' }}>
-                            <img className="animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={vis2} alt="office content 2" />
+                            <img className="max-xl:hidden animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={vis2} alt="office content 2" />
                         </div>
                         <div className="font-light text-black sm:text-lg dark:text-black">
                             <h2 className="mb-4 text-4xl tracking-tight font-bold text-black dark:text-white">NOTRE VISION</h2>
@@ -48,7 +48,7 @@ function Description() {
 
 
                 <section className="bg-white dark:bg-gray-900">
-                    <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div className="gap-16 items-center py-8  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                         <div className="font-light text-black sm:text-lg dark:text-black">
                             <h2 className="mb-4 text-4xl tracking-tight font-bold text-black dark:text-white">NOS MISSIONS</h2>
                             <p className="mb-4">
@@ -56,9 +56,9 @@ function Description() {
                                 <br />A ce titre, elle est chargée de :
                             </p>
                             <p className="mb-4">
-                                <div className="grid grid-cols-2 gap-4 mt-8">
+                                <div className="grid grid-cols-2 gap-4 mt-8 max-xl:flex max-xl:flex-col">
                                     <div>
-                                        <ul className="max-w-md space-y-1 text-black list-inside dark:text-black">
+                                        <ul className="max-w-md space-y-1 text-black list-inside dark:text-black max-xl:space-y-6">
                                             <li className="flex items-center border-b-2">
                                                 <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
@@ -88,45 +88,47 @@ function Description() {
 
 
                                     <div>
-                                        <li className="flex items-center border-b-2">
-                                            <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            identifier et accompagner les entreprises stratégiques ou à fort potentiel de croissance ;
-                                        </li>
-                                        <li className="flex items-center border-b-2">
-                                            <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            faciliter l’accès des micros, petites et moyennes entreprises au financement et aux marchés ;
-                                        </li>
-                                        <li className="flex items-center border-b-2">
-                                            <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            promouvoir des outils et produits financiers innovants et adaptés aux besoins des micros, petites et moyennes entreprises ;
-                                        </li>
-                                        <li className="flex items-center border-b-2">
-                                            <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            aider à la restructuration et à la mise à niveau des entreprises en difficulté.
-                                        </li>
+                                        <ul className='max-xl:space-y-6'>
+                                            <li className="flex items-center border-b-2">
+                                                <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                identifier et accompagner les entreprises stratégiques ou à fort potentiel de croissance ;
+                                            </li>
+                                            <li className="flex items-center border-b-2">
+                                                <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                faciliter l’accès des micros, petites et moyennes entreprises au financement et aux marchés ;
+                                            </li>
+                                            <li className="flex items-center border-b-2">
+                                                <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                promouvoir des outils et produits financiers innovants et adaptés aux besoins des micros, petites et moyennes entreprises ;
+                                            </li>
+                                            <li className="flex items-center border-b-2">
+                                                <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                aider à la restructuration et à la mise à niveau des entreprises en difficulté.
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </p>
                         </div>
                         <div style={{ width: '50%' }}>
-                            <img className="mt-4 w-full lg:mt-10 rounded-lg animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear" src={vis1} alt="office content 2" />
+                            <img className="max-xl:hidden mt-4 w-full lg:mt-10 rounded-lg animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear" src={vis1} alt="office content 2" />
                         </div>
 
                     </div>
                 </section>
 
                 <section className="bg-white dark:bg-gray-900">
-                    <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div className="gap-16 items-center py-8  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                         <div style={{ width: '50%' }}>
-                            <img className="animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={val} alt="office content 2" />
+                            <img className="max-xl:hidden animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={val} alt="office content 2" />
                         </div>
                         <div className="font-light text-black sm:text-lg dark:text-black">
                             <h2 className="mb-4 text-4xl tracking-tight font-bold text-black dark:text-white">NOS VALEURS</h2>
@@ -179,7 +181,7 @@ function Description() {
                 </section>
 
                 <section className="bg-white dark:bg-gray-900">
-                    <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div className="gap-16 items-center py-8  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 
                         <div className="font-light text-black sm:text-lg dark:text-black">
                             <h2 className="mb-4 text-4xl tracking-tight font-bold text-black dark:text-white">NOS AMBITIONS</h2>
@@ -187,9 +189,9 @@ function Description() {
                                 L'ADPME ambitionne de :
                             </p>
                             <p className="mb-4">
-                                <div className="grid grid-cols-2 gap-4 mt-8">
+                                <div className="grid grid-cols-2 gap-4 mt-8 max-xl:flex max-xl:flex-col">
                                     <div>
-                                        <ul className="max-w-md space-y-1 text-black list-inside dark:text-black">
+                                        <ul className="max-w-md space-y-1 text-black list-inside dark:text-black max-xl:space-y-6">
                                             <li className="flex items-center border-b-2">
                                                 <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
@@ -219,39 +221,41 @@ function Description() {
 
 
                                     <div>
-                                        <li className="flex items-center border-b-2">
-                                            <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            Apporter un soutien décisif aux secteurs stratégiques ou prioritaires (tourisme, artisanat, agroalimentaire, numérique, etc.) ainsi qu’aux entreprises à forte croissance ;
-                                        </li>
-                                        <li className="flex items-center border-b-2">
-                                            <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            Faire émerger des champions nationaux capables de contribuer au renforcement de la résilience de l’économie béninoise ;
-                                        </li>
-                                        <li className="flex items-center border-b-2">
-                                            <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            Accroître la mobilisation des capitaux et favoriser le changement d’échelle du financement des micros, petites et moyennes entreprises béninoises.
-                                        </li>
+                                        <ul className='max-xl:space-y-6'>
+                                            <li className="flex items-center border-b-2">
+                                                <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                Apporter un soutien décisif aux secteurs stratégiques ou prioritaires (tourisme, artisanat, agroalimentaire, numérique, etc.) ainsi qu’aux entreprises à forte croissance ;
+                                            </li>
+                                            <li className="flex items-center border-b-2">
+                                                <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                Faire émerger des champions nationaux capables de contribuer au renforcement de la résilience de l’économie béninoise ;
+                                            </li>
+                                            <li className="flex items-center border-b-2">
+                                                <svg className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                </svg>
+                                                Accroître la mobilisation des capitaux et favoriser le changement d’échelle du financement des micros, petites et moyennes entreprises béninoises.
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </p>
                         </div>
                         <div style={{ width: '50%' }}>
-                            <img className="animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={amb} alt="office content 2" />
+                            <img className="max-xl:hidden animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={amb} alt="office content 2" />
                         </div>
                     </div>
                 </section>
 
 
                 <section className="bg-white dark:bg-gray-900">
-                    <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div className="gap-16 items-center py-8  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                         <div style={{ width: '50%' }}>
-                            <img className="animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={priorite} alt="office content 2" />
+                            <img className="max-xl:hidden animate-pulse animate-infinite animate-duration-1000 animate-delay-300 animate-ease-linear mt-4 w-full lg:mt-10 rounded-lg" src={priorite} alt="office content 2" />
                         </div>
                         <div className="font-light text-black sm:text-lg dark:text-black">
                             <h2 className="mb-4 text-4xl tracking-tight font-bold text-black dark:text-white">NOS PRIORITES</h2>

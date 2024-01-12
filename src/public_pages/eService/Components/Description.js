@@ -4,7 +4,7 @@ function Description() {
     return (
         <>
             <section>
-                <div className='px-20 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
+                <div className='max-xl:px-4 px-14 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                     <ol className="space-y-4 text-black list-decimal list-inside dark:text-black ml-5 text-left">
                         <li>
                             <a target='_blank' className='inline-flex text-amber-700 items-center'>

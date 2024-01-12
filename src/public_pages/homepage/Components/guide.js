@@ -6,7 +6,7 @@ function guide(props) {
     return (
         <>
             <section className="bg-gray-100 dark:bg-gray-900">
-                <div className='text-center py-24 lg:py-15 sm:py-15 max-xl:px-14 px-14 mx-auto max-w-screen-xl'>
+                <div className='text-center py-24 lg:py-15 sm:py-15 max-xl:px-4 px-14 mx-auto max-w-screen-xl'>
                     <h3 className="text-left pb-5">
                         <span className="text-3xl font-bold dark:text-white mr-5">Guide</span>
                         <a className='hover:underline inline-flex text-amber-700 items-center' href="/guide">
@@ -16,7 +16,7 @@ function guide(props) {
                             </svg>
                         </a>
                     </h3>
-                    <div className="grid grid-cols-4 gap-4 text-left">
+                    <div className="grid grid-cols-4 gap-4 text-left max-md:flex max-md:flex-col">
                     {GuidesListe.length <= 0 ? (
                             <div role="status" className="max-w-md p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700">
                                 <div className="flex items-center justify-between">

@@ -4,7 +4,7 @@ import { ServicesList } from '../../../NoSQL';
 function LesServicesNonFinancier(props) {
     return (
         <>
-            <div className='max-xl:px-14 px-20 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
+            <div className='max-xl:px-4 px-20 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
                 <div className='mb-10'>
                     <span className='text-4xl font-bold'>SERVICES NON FINANCIERS</span>
                 </div>

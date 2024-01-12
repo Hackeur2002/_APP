@@ -12,21 +12,20 @@ function LesEvenements() {
     const [tabEvent, setTabEvent] = React.useState([]);
     const [value, setValue] = useState('tous');
 
-    const handleChange = async (event) => {
+    const handleChange = (event) => {
         setValue(event.target.value);
-
-        const filteredEvents = EvenemntsLists.map((el) =>
-            el.type.map((ty) =>
-                ty.contenu.filter((ctu) => ctu.idtype === event.target.value)
+        let tabevent = EvenemntsLists.flatMap((ev) =>
+            ev.type.flatMap((et) =>
+                et.contenu.filter((etf) => etf.idtype === parseInt(event.target.value,10))
             )
         );
 
-        setTabEvent(filteredEvents);
+        setTabEvent(tabevent);
         console.log(tabEvent)
     };
     return (
         <>
-            <div className='max-xl:px-14 px-20 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
+            <div className='max-xl:px-4 px-20 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15'>
                 {EvenemntsLists.length <= 0 ? (<span>Aucun évènement pour le moment</span>) : 
                     <div className="lg:grid lg:grid-cols-4 lg:gap-4 sm:flex sm:flex-col">
                         <div className="text-left">
@@ -41,7 +40,7 @@ function LesEvenements() {
                                             >
                                                 {
                                                     evl.type.map((te) => (
-                                                        <FormControlLabel value={te.id.toString()} key={te.id} control={<Radio />} label={<span className='text-sm'>{te.typeE}</span>} />
+                                                        <FormControlLabel value={te.id} key={te.id} control={<Radio />} label={<span className='text-sm'>{te.typeE}</span>} />
                                                     ))
                                                 }
                                             </FormGroup>
@@ -89,7 +88,7 @@ function LesEvenements() {
                                                         <a href={`/details-evenement/${ec.titre}`}>
                                                             <h5 className="mb-2 text-2sm font-bold tracking-tight text-black-900 dark:text-white">{ec.titre}</h5>
                                                         </a>
-                                                        <p className="mb-3 font-normal text-sm dark:text-black-200">{ec.description}</p>
+                                                        <p className="mb-3 font-normal text-sm dark:text-black-200">{ec.subTitle}</p>
 
                                                     </div>
                                                 </div>
@@ -98,16 +97,21 @@ function LesEvenements() {
                                     }) :
                                     tabEvent.map((ev) => (
 
-                                        <div className="max-w-sm bg-white">
+                                        <div key={ev.id} className="max-w-sm bg-white">
                                             <a href={`/details-evenement/${ev.titre}`}>
-                                                <img src={EventImg} elt="" />
+                                                {ev.image ? (<img src={ev.image} elt="" />) : ("")}
                                             </a>
                                             <div className="p-5">
-                                                <p><span className='text-gray-300'><i>{ev.date}</i></span></p>
+                                                <p>
+                                                    <span className='inline-flex'>
+                                                        <img className='w-5 h-5' src={cal} />&nbsp;
+                                                        <span className='text-gray-500 text-sm'><i>{ev.date}</i></span>
+                                                    </span>
+                                                </p>
                                                 <a href={`/details-evenement/${ev.titre}`}>
-                                                    <h5 className="mb-2 text-xl font-bold tracking-tight text-black-900 dark:text-white">{ev.titre}</h5>
+                                                    <h5 className="mb-2 text-2sm font-bold tracking-tight text-black-900 dark:text-white">{ev.titre}</h5>
                                                 </a>
-                                                <p className="mb-3 font-normal text-sm dark:text-black-200">{ev.description}</p>
+                                                <p className="mb-3 font-normal text-sm dark:text-black-200">{ev.subTitle}</p>
 
                                             </div>
                                         </div>

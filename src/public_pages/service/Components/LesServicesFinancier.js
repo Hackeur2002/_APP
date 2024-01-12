@@ -3,7 +3,7 @@ import React from 'react';
 function LesServicesFinancier(props) {
     return (
         <>
-            <div className='max-xl:px-14 px-20 pb-10 mx-auto max-w-screen-xl text-left'>
+            <div className='max-xl:px-4 px-20 pb-10 mx-auto max-w-screen-xl text-left'>
                 <div className='mb-10'>
                     <span className='text-4xl font-bold'>SERVICES FINANCIERS</span>
                 </div>

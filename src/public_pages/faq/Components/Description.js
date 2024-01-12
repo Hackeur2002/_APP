@@ -5,13 +5,13 @@ import { Accordion } from 'flowbite-react';
 function Description() {
     return (
         <>
-            <section>
+            <section className='max-xl:px-4 px-20 mx-auto max-w-screen-xl bg-gray-10 text-center py-10 lg:py-10 sm:py-10'>
                 
                 <div>
                     {FAQLIST.map((donnelist,index) => {
                             const newTab = [...donnelist.questions];
                             return (
-                                <div className='px-20 bg-gray-10 mx-auto max-w-screen-xl text-center py-24 lg:py-15 sm:py-15' key={index}>
+                                <div key={index}>
                                     {newTab.id == null ? 
                                         (
                                             <>
