@@ -9,10 +9,13 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import InfoPerso from './Formulaires/InfoPerso';
 import { FileInput, Label, Modal, TextInput, Radio, Select, Button } from 'flowbite-react';
-// import Tab from '@mui/material/Tab';
-// import TabContext from '@mui/lab/TabContext';
-// import TabList from '@mui/lab/TabList';
-// import TabPanel from '@mui/lab/TabPanel';
+import {
+    Tabs,
+    TabsHeader,
+    TabsBody,
+    Tab,
+    TabPanel,
+} from "@material-tailwind/react";
 
 const steps = [
     {
@@ -20,7 +23,7 @@ const steps = [
         description: <InfoPerso />,
     },
     {
-        label: 'Information de l\'entreprise',
+        label: 'Informations de l\'entreprise',
         description:
             'An ad group contains one or more ads which target a shared set of keywords.',
     },
@@ -33,7 +36,24 @@ const steps = [
     },
 ];
 
+const data = [
+    {
+        label: "Enregistrer son entreprise",
+        value: "entreprise",
+        desc: `It really matters and then like it really doesn't matter.
+      What matters is the people who are sparked by it. And the people 
+      who are like offended by it, it doesn't matter.`,
+    },
+    {
+        label: "Rechercher son entreprise",
+        value: "recherche",
+        desc: `Because it's about motivating the doers. Because I'm here
+      to follow my dreams and inspire other people to follow their dreams, too.`,
+    },
+];
+
 export default function Description() {
+    const [activeTab, setActiveTab] = React.useState("entreprise");
     const [activeStep, setActiveStep] = useState(0);
     const [fullName, setFullName] = useState('')
     const [old, setOld] = useState(Date)
@@ -88,275 +108,317 @@ export default function Description() {
 
     return (
         <div className='max-xl:px-4 px-14 mx-auto max-w-screen-xl text-left py-24 lg:py-15 sm:py-15'>
-            <Box sx={{ maxWidth: 900 }}>
-                <Stepper activeStep={activeStep} orientation="vertical">
-                    {steps.map((step, index) => (
-                        <Step key={step.label}>
-                            <StepLabel
-                                optional={
-                                    index === 2 ? (
-                                        <Typography variant="caption">Dernière étape</Typography>
-                                    ) : null
-                                }
-                            >
-                                {step.label}
-                            </StepLabel>
-                            <StepContent>
-                                <Typography>
-                                    {step.label == 'Informations du dirigeant' ? (
-                                        <div className="space-y-6">
-                                            <br />
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="nom" value={<span className='font-bold'>Nom(s) et prénoms(s) <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="nom" placeholder='Ex: John Doe' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="datenais" value={<span className='font-bold'>Date de naissance <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="datenais" type="date" required />
-                                            </div>
-                                            <div>
-                                                <fieldset className="flex max-w-md flex-col gap-4">
-                                                    <legend className="mb-4"><span className='font-bold'>Genre <span className='text-red-500'>*</span></span></legend>
-                                                    <div className="flex items-center gap-2">
-                                                        <Radio id="united-state" name="countries" value="USA" defaultChecked />
-                                                        <Label htmlFor="united-state">Homme</Label>
-                                                    </div>
-                                                    <div className="flex items-center gap-2">
-                                                        <Radio id="germany" name="countries" value="Germany" />
-                                                        <Label htmlFor="germany">Femme</Label>
-                                                    </div>
-                                                </fieldset>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="mail" value={<span className='font-bold'>Adresse email <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="mail" placeholder='Ex: johndoe@gmail.com' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="phone" value={<span className='font-bold'>Numéro de télephone mobile <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="phone" placeholder='Ex:0022960XXXXXX' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="fonction" value={<span className='font-bold'>Fonction dans l'entreprise <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <Select id="fonction" required>
-                                                    <option value=''>Sélectionner votre fonction dans l'entreprise</option>
-                                                    <option value='Associé'>Associé</option>
-                                                    <option value='Propriétaire'>Propriétaire</option>
-                                                    <option value='Actionnaire'>Actionnaire</option>
-                                                    <option value='Gestionnaire'>Gestionnaire</option>
-                                                    <option value='Collaborateur'>Collaborateur</option>
-                                                </Select>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="part" value={<span className='font-bold'>Quel est votre pourcentage des parts sociales que vous détenez ? <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="part" placeholder='Ex:100' type="number" required />
-                                            </div>
-                                        </div>
-                                    ) : step.label == 'Information de l\'entreprise' ? (
-                                        <div className="space-y-6">
-                                            <br />
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="sigle" value={<span className='font-bold'>Sigle de l'entreprise <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="sigle" placeholder='Ex: ADPME' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="rason_sociale" value={<span className='font-bold'>Raison sociale <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="rason_sociale" placeholder='Ex: Agence de Developpement des Petites et Moyennes Entreprises' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="capital_social" value={<span className='font-bold'>Capital social (en FCFA) <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="capital_social" placeholder='Ex: 50000000' type="number" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="date_creation" value={<span className='font-bold'>Date de création de l'entreprise <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="date_creation" type="date" required />
-                                            </div>
-
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="tel" value={<span className='font-bold'>Télephone de l'entreprise <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="tel" placeholder='Ex: 0022945XXXXXX' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="mail" value={<span className='font-bold'>Adresse mail de l'entreprise <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="mail" placeholder='Ex: adpme@gmail.com' type="mail" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="dept" value={<span className='font-bold'>Département <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <Select id="dept" required>
-                                                    <option value=''>Sélectionner votre département</option>
-                                                    <option value='departement1'>Département 1</option>
-                                                    <option value='departement2'>Département 2</option>
-                                                    <option value='departement3'>Département 3</option>
-                                                </Select>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="com" value={<span className='font-bold'>Commune <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <Select id="com" required>
-                                                    <option value=''>Sélectionner votre commune</option>
-                                                    <option value='commune1'>Commune 1</option>
-                                                    <option value='commune2'>Commune 2</option>
-                                                    <option value='commune3'>Commune 3</option>
-                                                </Select>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="arrondissement" value={<span className='font-bold'>Arrondissement <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <Select id="arrondissement" required>
-                                                    <option value=''>Sélectionner votre arrondissement</option>
-                                                    <option value='arrondissement1'>Arrondissement 1</option>
-                                                    <option value='arrondissement2'>Arrondissement 2</option>
-                                                    <option value='arrondissement3'>Arrondissement 3</option>
-                                                </Select>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="quartier" value={<span className='font-bold'>Village ou quartier de ville <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <Select id="quartier" required>
-                                                    <option value=''>Sélectionner votre village ou votre quartier</option>
-                                                    <option value='quartier1'>Quartier 1</option>
-                                                    <option value='quartier2'>Quartier 2</option>
-                                                    <option value='quartier3'>Quartier 3</option>
-                                                </Select>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="adresse" value={<span className='font-bold'>Adresse physique de l'entreprise (Carré, Lot, ect...) <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="adresse" placeholder='Ex: c/20XX Lot X' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="secteur" value={<span className='font-bold'>Secteur <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <Select id="secteur" required>
-                                                    <option value=''>Sélectionner le secteur de l'entreprise</option>
-                                                    <option value='Secteur1'>Secteur 1</option>
-                                                    <option value='Secteur2'>Secteur 2</option>
-                                                    <option value='Secteur3'>Secteur 3</option>
-                                                </Select>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="sous_secteur" value={<span className='font-bold'>Sous-secteur <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <Select id="sous_secteur" required>
-                                                    <option value=''>Sélectionner le sous-secteur de l'entreprise</option>
-                                                    <option value='Secteur1'>Sous-Secteur 1</option>
-                                                    <option value='Secteur2'>Sous-Secteur 2</option>
-                                                    <option value='Secteur3'>Sous-Secteur 3</option>
-                                                </Select>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="rccm" value={<span className='font-bold'>N° RCCM <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="rccm" placeholder='Ex: RCCM RB/COT/XX B XXXXX' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="bp" value={<span className='font-bold'>Boîte postale <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <TextInput id="bp" placeholder='Ex: BP XXXXX' type="text" required />
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="statut_juridique" value={<span className='font-bold'>Statut juridique <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <Select id="statut_juridique" required>
-                                                    <option value=''>Sélectionner le statut juridique de l'entreprise</option>
-                                                    <option value='statut1'>Statut juridique 1</option>
-                                                    <option value='statut2'>Statut juridique 2</option>
-                                                    <option value='statut3'>Statut juridique 3</option>
-                                                </Select>
-                                            </div>
-                                        </div>
-                                    ) : (
-                                        <>
-                                            <span>Quel est le montant de votre chiffre annuel moyen au cours des deux dernières années ? (en FCFA)</span>
-                                            <div className='mt-4'>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="yearn-2" value={<span className='font-bold'>Indiquer le chiffre d'affaire et le nombre d'employé de {currentYear - 2} <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <div className='grid grid-cols-2 gap-2'>
-                                                    <TextInput id="yearn-2" placeholder='Ex: 520XXXXXX' type="number" required />
-                                                    <TextInput id="nbemployer-2" placeholder='Ex: 10' type="number" required />
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className="mb-2 block">
-                                                    <Label htmlFor="yearn-1" value={<span className='font-bold'>Indiquer le chiffre d'affaire et le nombre d'employé de {currentYear - 1} <span className='text-red-500'>*</span></span>} />
-                                                </div>
-                                                <div className='grid grid-cols-2 gap-2'>
-                                                    <TextInput id="yearn-1" placeholder='Ex: 520XXXXXX' type="number" required />
-                                                    <TextInput id="nbemployer-1" placeholder='Ex: 10' type="number" required />
-                                                </div>
-                                            </div>
-                                        </>
-                                    )}
-                                </Typography>
-                                <Box sx={{ mb: 2, mt: 4 }}>
-                                    <div className='inline-flex gap-2'>
-                                        <Button
-                                            onClick={handleNext}
-                                            color=""
-                                            className='rounded-l-lg rounded-tr-lg inline-flex items-center text-sm font-medium text-center text-white bg-amber-700 rounded-lg hover:bg-amber-800'
-
-                                        >
-                                            {index === steps.length - 1 ? 'Terminé' : 'Continuer'}
-                                        </Button>
-                                        <Button
-                                            disabled={index === 0}
-                                            onClick={handleBack}
-                                            color=""
-                                            className='rounded-l-lg rounded-tr-lg inline-flex items-center text-sm font-medium text-center text-white bg-amber-700 rounded-lg hover:bg-amber-800'
-
-                                        >
-                                            Retour
-                                        </Button>
-                                    </div>
-                                </Box>
-                            </StepContent>
-                        </Step>
+            <Tabs value={activeTab}>
+                <TabsHeader
+                    className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
+                    indicatorProps={{
+                        className:
+                            "bg-transparent border-b-2 border-gray-900 shadow-none rounded-none",
+                    }}
+                >
+                    {data.map(({ label, value }) => (
+                        <Tab
+                            key={value}
+                            value={value}
+                            onClick={() => setActiveTab(value)}
+                            className={activeTab === value ? "text-gray-900" : ""}
+                        >
+                            {label}
+                        </Tab>
                     ))}
-                </Stepper>
-                {activeStep === steps.length && (
-                    <Paper square elevation={0} sx={{ p: 3 }}>
-                        <Typography>Tous les étapes sont completer - Vous avez finis</Typography>
-                        <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-                            Réinitialiser
-                        </Button>
-                    </Paper>
-                )}
-            </Box>
+                </TabsHeader>
+                <TabsBody>
+                    {data.map(({ value, desc }) => (
+                        <TabPanel key={value} value={value}>
+                            {value == 'entreprise'? (
+                                <Box sx={{ maxWidth: 900 }}>
+                                    <Stepper activeStep={activeStep} orientation="vertical">
+                                        {steps.map((step, index) => (
+                                            <Step key={step.label}>
+                                                <StepLabel
+                                                    optional={
+                                                        index === 2 ? (
+                                                            <Typography variant="caption">Dernière étape</Typography>
+                                                        ) : null
+                                                    }
+                                                >
+                                                    {step.label}
+                                                </StepLabel>
+                                                <StepContent>
+                                                    <Typography>
+                                                        {step.label == 'Informations du dirigeant' ? (
+                                                            <div className="space-y-6">
+                                                                <br />
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="nom" value={<span className='font-bold'>Nom(s) et prénoms(s) <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="nom" placeholder='Ex: John Doe' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="datenais" value={<span className='font-bold'>Date de naissance <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="datenais" type="date" required />
+                                                                </div>
+                                                                <div>
+                                                                    <fieldset className="flex max-w-md flex-col gap-4">
+                                                                        <legend className="mb-4"><span className='font-bold'>Genre <span className='text-red-500'>*</span></span></legend>
+                                                                        <div className="flex items-center gap-2">
+                                                                            <Radio id="united-state" name="countries" value="USA" defaultChecked />
+                                                                            <Label htmlFor="united-state">Homme</Label>
+                                                                        </div>
+                                                                        <div className="flex items-center gap-2">
+                                                                            <Radio id="germany" name="countries" value="Germany" />
+                                                                            <Label htmlFor="germany">Femme</Label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="mail" value={<span className='font-bold'>Adresse email <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="mail" placeholder='Ex: johndoe@gmail.com' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="phone" value={<span className='font-bold'>Numéro de télephone mobile <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="phone" placeholder='Ex:0022960XXXXXX' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="fonction" value={<span className='font-bold'>Fonction dans l'entreprise <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <Select id="fonction" required>
+                                                                        <option value=''>Sélectionner votre fonction dans l'entreprise</option>
+                                                                        <option value='Associé'>Associé</option>
+                                                                        <option value='Propriétaire'>Propriétaire</option>
+                                                                        <option value='Actionnaire'>Actionnaire</option>
+                                                                        <option value='Gestionnaire'>Gestionnaire</option>
+                                                                        <option value='Collaborateur'>Collaborateur</option>
+                                                                    </Select>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="part" value={<span className='font-bold'>Quel est votre pourcentage des parts sociales que vous détenez ? <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="part" placeholder='Ex:100' type="number" required />
+                                                                </div>
+                                                            </div>
+                                                        ) : step.label == 'Informations de l\'entreprise' ? (
+                                                            <div className="space-y-6">
+                                                                <br />
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="sigle" value={<span className='font-bold'>Sigle de l'entreprise <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="sigle" placeholder='Ex: ADPME' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="rason_sociale" value={<span className='font-bold'>Raison sociale <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="rason_sociale" placeholder='Ex: Agence de Developpement des Petites et Moyennes Entreprises' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="capital_social" value={<span className='font-bold'>Capital social (en FCFA) <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="capital_social" placeholder='Ex: 50000000' type="number" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="date_creation" value={<span className='font-bold'>Date de création de l'entreprise <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="date_creation" type="date" required />
+                                                                </div>
+
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="tel" value={<span className='font-bold'>Télephone de l'entreprise <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="tel" placeholder='Ex: 0022945XXXXXX' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="mail" value={<span className='font-bold'>Adresse mail de l'entreprise <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="mail" placeholder='Ex: adpme@gmail.com' type="mail" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="dept" value={<span className='font-bold'>Département <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <Select id="dept" required>
+                                                                        <option value=''>Sélectionner votre département</option>
+                                                                        <option value='departement1'>Département 1</option>
+                                                                        <option value='departement2'>Département 2</option>
+                                                                        <option value='departement3'>Département 3</option>
+                                                                    </Select>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="com" value={<span className='font-bold'>Commune <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <Select id="com" required>
+                                                                        <option value=''>Sélectionner votre commune</option>
+                                                                        <option value='commune1'>Commune 1</option>
+                                                                        <option value='commune2'>Commune 2</option>
+                                                                        <option value='commune3'>Commune 3</option>
+                                                                    </Select>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="arrondissement" value={<span className='font-bold'>Arrondissement <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <Select id="arrondissement" required>
+                                                                        <option value=''>Sélectionner votre arrondissement</option>
+                                                                        <option value='arrondissement1'>Arrondissement 1</option>
+                                                                        <option value='arrondissement2'>Arrondissement 2</option>
+                                                                        <option value='arrondissement3'>Arrondissement 3</option>
+                                                                    </Select>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="quartier" value={<span className='font-bold'>Village ou quartier de ville <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <Select id="quartier" required>
+                                                                        <option value=''>Sélectionner votre village ou votre quartier</option>
+                                                                        <option value='quartier1'>Quartier 1</option>
+                                                                        <option value='quartier2'>Quartier 2</option>
+                                                                        <option value='quartier3'>Quartier 3</option>
+                                                                    </Select>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="adresse" value={<span className='font-bold'>Adresse physique de l'entreprise (Carré, Lot, ect...) <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="adresse" placeholder='Ex: c/20XX Lot X' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="secteur" value={<span className='font-bold'>Secteur <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <Select id="secteur" required>
+                                                                        <option value=''>Sélectionner le secteur de l'entreprise</option>
+                                                                        <option value='Secteur1'>Secteur 1</option>
+                                                                        <option value='Secteur2'>Secteur 2</option>
+                                                                        <option value='Secteur3'>Secteur 3</option>
+                                                                    </Select>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="sous_secteur" value={<span className='font-bold'>Sous-secteur <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <Select id="sous_secteur" required>
+                                                                        <option value=''>Sélectionner le sous-secteur de l'entreprise</option>
+                                                                        <option value='Secteur1'>Sous-Secteur 1</option>
+                                                                        <option value='Secteur2'>Sous-Secteur 2</option>
+                                                                        <option value='Secteur3'>Sous-Secteur 3</option>
+                                                                    </Select>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="rccm" value={<span className='font-bold'>N° RCCM <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="rccm" placeholder='Ex: RCCM RB/COT/XX B XXXXX' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="bp" value={<span className='font-bold'>Boîte postale <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <TextInput id="bp" placeholder='Ex: BP XXXXX' type="text" required />
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="statut_juridique" value={<span className='font-bold'>Statut juridique <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <Select id="statut_juridique" required>
+                                                                        <option value=''>Sélectionner le statut juridique de l'entreprise</option>
+                                                                        <option value='statut1'>Statut juridique 1</option>
+                                                                        <option value='statut2'>Statut juridique 2</option>
+                                                                        <option value='statut3'>Statut juridique 3</option>
+                                                                    </Select>
+                                                                </div>
+                                                            </div>
+                                                        ) : (
+                                                            <>
+                                                                <span>Quel est le montant de votre chiffre annuel moyen au cours des deux dernières années ? (en FCFA)</span>
+                                                                <div className='mt-4'>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="yearn-2" value={<span className='font-bold'>Indiquer le chiffre d'affaire et le nombre d'employé de {currentYear - 2} <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <div className='grid grid-cols-2 gap-2'>
+                                                                        <TextInput id="yearn-2" placeholder='Ex: 520XXXXXX' type="number" required />
+                                                                        <TextInput id="nbemployer-2" placeholder='Ex: 10' type="number" required />
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div className="mb-2 block">
+                                                                        <Label htmlFor="yearn-1" value={<span className='font-bold'>Indiquer le chiffre d'affaire et le nombre d'employé de {currentYear - 1} <span className='text-red-500'>*</span></span>} />
+                                                                    </div>
+                                                                    <div className='grid grid-cols-2 gap-2'>
+                                                                        <TextInput id="yearn-1" placeholder='Ex: 520XXXXXX' type="number" required />
+                                                                        <TextInput id="nbemployer-1" placeholder='Ex: 10' type="number" required />
+                                                                    </div>
+                                                                </div>
+                                                            </>
+                                                        )}
+                                                    </Typography>
+                                                    <Box sx={{ mb: 2, mt: 4 }}>
+                                                        <div className='inline-flex gap-2'>
+                                                            <Button
+                                                                onClick={handleNext}
+                                                                color=""
+                                                                className='rounded-l-lg rounded-tr-lg inline-flex items-center text-sm font-medium text-center text-white bg-amber-700 rounded-lg hover:bg-amber-800'
+
+                                                            >
+                                                                {index === steps.length - 1 ? 'Terminé' : 'Continuer'}
+                                                            </Button>
+                                                            <Button
+                                                                disabled={index === 0}
+                                                                onClick={handleBack}
+                                                                color=""
+                                                                className='rounded-l-lg rounded-tr-lg inline-flex items-center text-sm font-medium text-center text-white bg-amber-700 rounded-lg hover:bg-amber-800'
+
+                                                            >
+                                                                Retour
+                                                            </Button>
+                                                        </div>
+                                                    </Box>
+                                                </StepContent>
+                                            </Step>
+                                        ))}
+                                    </Stepper>
+                                    {activeStep === steps.length && (
+                                        <Paper square elevation={0} sx={{ p: 3 }}>
+                                            <Typography>Tous les étapes sont completer - Vous avez finis</Typography>
+                                            <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
+                                                Réinitialiser
+                                            </Button>
+                                        </Paper>
+                                    )}
+                                </Box>
+                            ) : (
+                                    <form>
+                                        <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                                        <div className="relative">
+                                            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                                <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                                </svg>
+                                            </div>
+                                            <input type="search" id="default-search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Recherchez votre entreprise" required />
+                                            <button type="submit" className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                                        </div>
+                                    </form>
+                            )}
+                        </TabPanel>
+                    ))}
+                </TabsBody>
+            </Tabs>
+            
             
         </div>
     );
